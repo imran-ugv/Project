@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeCrafters Compiler</title>
+  <link rel="stylesheet" href="compiler-style.css" />
+</head>
+<body>
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>&lt;/&gt;CodeCrafters</h1>
+      </div>
+      <div class="nav-links">
+        <a href="../Home/home-index.html" target="_blank">Home</a>
+        <a href="../HTML/html-index.html" target="_blank">HTML</a>
+        <a href="../CSS/css-index.html" target="_blank">CSS</a>
+        <a href="../Contact/contact-index.html" target="_blank">Contact</a>
+        <a href="../Compiler/compiler-index.html" target="_blank">Compiler</a>
+      </div>
+    </nav>
+  </header>
+  <section class="compiler-container">
+    <h1 class="compiler-title">🌟 Online Code Compiler</h1>
+    <div class="editor-box">
+      <textarea id="html-code" placeholder="Write HTML..."></textarea>
+      <textarea id="css-code" placeholder="Write CSS..."></textarea>
+      <textarea id="js-code" placeholder="Write JavaScript..."></textarea>
+    </div>
+    <button onclick="runCode()" class="run-btn" id="runBtn">▶ Run</button>
+    <iframe id="output"></iframe>
+  </section>
+
+  <script src="compiler-script.js"></script>
+
+  <!--FOOTER SECTION -->
+<section class="footer-section">
+  <footer>
+    <p>© 2025 CodeCrafters | Made with 💻 by CodeCrafters</p>
+  </footer>
+</section>
+</body>
+</html>

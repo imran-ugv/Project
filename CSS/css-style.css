@@ -1,0 +1,126 @@
+/* GLOBAL RESET & BODY */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* FLEX CONTAINER FOR PAGE */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* NAVBAR remains same */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(28, 35, 51, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #d4a5ff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo h1:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #d4a5ff;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d4a5ff;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #f1f5f9;
+  padding: 2rem;
+}
+
+.hero-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #9b5de5, #f15bb5, #fee440);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bounceFade 2s ease-in-out infinite;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #94a3b8;
+  animation: fadeInUp 2s ease-in;
+}
+
+/* FOOTER */
+.footer-section {
+  background-color: #0f0f0f;
+  padding: 1.2rem 0;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes bounceFade {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(-10px); opacity: 0.9; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

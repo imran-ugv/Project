@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" href="html-style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>&lt;/&gt;CodeCrafters</h1>
+      </div>
+      <div class="nav-links">
+        <a href="../Home/home-index.html" target="_blank">Home</a>
+        <a href="../HTML/html-index.html" target="_blank">HTML</a>
+        <a href="../CSS/css-index.html" target="_blank">CSS</a>
+        <a href="../Contact/contact-index.html" target="_blank">Contact</a>
+        <a href="../Compiler/compiler-index.html" target="_blank">Compiler</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>HTML Tutorial</h2>
+      <ul>
+        <li class="active"><a href="#intro">Introduction</a></li>
+        <li><a href="#working">HTML Working</a></li>
+        <li><a href="#install">HTML Installation</a></li>
+        <li><a href="#execution">HTML Execution</a></li>
+        <li><a href="#structure">HTML Page Structure</a></li>
+        <li>HTML Tags</li>
+        <li>HTML Elements</li>
+        <li>HTML Attributes</li>
+        <li>HTML Comments</li>
+        <li>HTML id & Class</li>
+        <li>Skeleton Tags</li>
+        <li>Heading Tags</li>
+        <li>Paragraphs Tag</li>
+        <li>Horizontal Line Tag</li>
+        <li>Line Break Tag</li>
+        <li>Anchor Tag</li>
+        <li>Image Tag</li>
+        <li>Pre Tag</li>
+        <li>HTML Inline Elements</li>
+        <li>HTML Block Elements</li>
+        <li>HTML Lists</li>
+        <li>HTML Unordered List</li>
+        <li>HTML Ordered List</li>
+        <li>HTML Definition Lists</li>
+        <li>HTML Tables</li>
+        <li>More on Tables</li>
+        <li>Introduction to HTML Forms</li>
+        <li>HTML Input Types</li>
+        <li>Textarea and Select</li>
+        <li>More on Forms</li>
+        <li>HTML Meta Tags</li>
+        <li>Link and Script Tags</li>
+        <li>Video and Audio tags</li>
+        <li>SVG in HTML</li>
+        <li>iFrames in HTML</li>
+        <li>HTML Code tags</li>
+        <li>HTML Semantic tags</li>
+        <li>HTML Canvas</li>
+        <li>HTML Global Attributes</li>
+        <li>HTML Entities</li>
+        <li>HTML Quotation Tag</li>
+        <li>Obsolete HTML Tag</li>
+        <li>Character Sets</li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <section id="intro">
+        <div>
+          <h1 class="gradient-title">HTML Introduction</h1>
+          <p>Today, I'm writing this tutorial to create a resource that will help you learn HTML in less than 30 days. Here's a recommended timeline for learning HTML, based on your educational background:</p>
+          <ul>
+          <li>High School students and younger: Around 25 days</li>
+          <li>Those beyond High School: Around 20 days</li>
+          <li>College students and above: Around 10–20 days</li>
+          </ul>
+          <p>You may be wondering why I’m discussing these timelines. It’s important to set expectations before starting your learning journey.</p>
+        </div>
+
+        <div>
+          <h2>What is HTML?</h2>
+          <p>HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web pages. It's a markup language used to structure content on the web, defining elements like headings, paragraphs, links, and images. HTML forms the backbone of web content. In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks that create the structure and look of a website, similar to how bricks and mortar are used to build a house.</p>
+          <p>In a nutshell:</p>
+          <ul>
+          <li>HTML is the language of the web, used to create websites.</li>
+          <li>HTML defines the barebone structure or layout of web pages that we see on the Internet.</li>
+          <li>HTML consists of a set of tags contained within an HTML document, and the associated files typically have either a .html or .htm extension.</li>
+          <li>There are several versions of HTML, with HTML5 being the most recent version.</li>
+          </ul>
+      </div>
+
+      <div>
+        <h2>Features of HTML</h2>
+        <ul>
+          <li>It is platform-independent. For example, Chrome displays the same pages identically across different operating systems such as Mac, Linux, and Windows.</li>
+          <li>Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their website).</li>
+          <li>HTML is a markup language and not a programming language.</li>
+          <li>It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or dynamic) web pages.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Why the Term HyperText & Markup Language?</h2>
+        <p>The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup language.' 'Hypertext' refers to the linking of text with other documents, while 'markup language' denotes a language that utilizes a specific set of tags.
+        <br></br>
+        Thus, HTML is the practice of displaying text, graphics, audio, video, etc., in a certain way using special tags.
+        <br></br>
+        <b>Note:</b> Tags are meaningful texts enclosed in angle braces, like '<...>'. For example, the '' tag. Each tag has a unique meaning and significance in building an HTML page, and it can influence the web page in various ways.
+        </p>
+      </div>
+
+      <div>
+        <h2>Quick Exercise</h2>
+        <p>Open a webpage of your choice, right-click on the browser, and select 'View Page Source,' and then you will see the HTML code for that page.</p>
+        <div>
+          <video width="700" controls muted loop>
+            <source src="../Media/introduction_html_tutorial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>          
+        </div>
+        <p>This is the code that the server sent to display the page you're currently viewing. In this tutorial, we'll learn how to write this type of code using HTML.</p>
+      </div>
+
+      <div>
+        <h2>A beautiful analogy to understand HTML, CSS, and JavaScript:</h2>
+        <img src="../Media/html-car-example.png" alt="html car example" width=700px" height="auto" />
+        <p>In building a webpage, think of HTML, CSS, and JavaScript as different parts of a car. HTML is like the car's skeleton, forming the basic structure and frame. CSS adds the paint and finishing touches, making the car look appealing with color, style, and design. JavaScript is similar to the engine and mechanical parts, infusing the car with functionality, movement, and interactive features. Similarly, when developing a website, HTML lays out the structure, CSS enhances its visual appeal, and JavaScript provides interactivity and dynamic content.</p>
+      </div>
+
+      <div>
+        <h2>History of HTML</h2>
+        <ul>
+          <li>In 1989, Tim Berners-Lee established the World Wide Web (www), and in 1991, he created the first version of HTML.</li>
+          <li>From 1995 to 1997, further work was done to develop and refine different versions of HTML.</li>
+          <li>In 1999, a committee was organized that standardized HTML 4.0, a version still used by many today.</li>
+          <li>The latest and most stable version of HTML is 5, also known as HTML5.</li>
+        </ul>
+        <p>Feel free to read more history of HTML here on the <a href="https://en.wikipedia.org/wiki/HTML#:~:text=HTML%20version%20timeline">HTML Wikipedia page</a> but I will move ahead and cover important aspects of HTML.</p>
+      </div>
+     </section>
+
+      <section id="working">
+        <div>
+          <h1 class="gradient-title">HTML Working</h1>
+          <p>You must have heard of frontend and backend. Frontend refers to the visible part of a website or app that users interact with, like the tables, images, and buttons. It's built using languages like HTML, CSS, and JavaScript. The backend, on the other hand, handles behind-the-scenes operations like storing and processing data when users interact with the frontend. It uses languages like Python, Ruby, and Java. In essence, frontend is what users see, while backend manages the functionality.</p>
+        </div>
+        <div>
+          <h2>How does HTML work?</h2>
+          <p>When we want to access any information on the internet, we search for it using a web browser. The web browser retrieves the content from web servers, where it is stored in the form of HTML documents.</p>
+          <p>An HTML document is created by writing code with specific tags in a code editor of your choice. The document is then saved with the '.html' extension. Once saved, the browser interprets the HTML document, reads it, and renders the web page.</p>
+          <img src="../Media/how-html-homeworks.png" alt="how html homeworks" width=700px" height="auto" />
+          <p>The text editor has the HTML code of a website. This website can now be viewed in a beautifully rendered format using a computer program known as a web browser.</p>
+          </div>
+          <div>
+            <h2>What is a Web Browser?</h2>
+            <p>A web browser is a program that understands HTML tags and renders them in a human-readable format that is easily viewable by people visiting the website. Developers write code in HTML because it's a straightforward way to instruct the web browser on what to display. In the next section, I'll show you how to set up VS Code for writing your own HTML code and rendering it in a web browser.</p>
+          </div>
+          <div>
+            <h2>What is an HTML Document?</h2>
+            <p>An HTML document is a text document saved with the '.html' or '.htm' extension, containing text and specific tags enclosed in '< >'. These tags provide the necessary instructions for configuring the web page. The tags themselves are standardized and fixed. The structure of an HTML document will be explained later in this HTML tutorial.</p>
+          </div>
+          <div>
+            <h2>What is a Rendered Page:</h2>
+            <p>The rendered page is the output screen of our HTML Document which is the page displayed on the browser.</p>
+          </div>
+          <div>
+            <h2>How does a basic website work?</h2>
+            <ul>
+              <li>Web Browser(client) requests websites like <a href="https://www.codewithharry.com/">www.codewithharry.com</a> from the web server.</li>
+              <li>Web server in return sends HTML, CSS, and JavaScript files to it.</li>
+              <li>HTML, CSS, and JavaScript files are parsed by a web browser which is responsible for showing you a beautiful website.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>How does a browser work?</h2>
+            <p>A web browser plays a crucial role in parsing and rendering HTML code to the client. A web browser is a complex program that performs many tasks behind the scenes. Here's a summary of how it works:</p>
+            <ul>
+              <li>A browser is an application that reads HTML documents and displays them as web pages. Browsers can't access the content directly from where it's stored; this is where servers come into play.</li>
+              <li>A server acts as an intermediary, listening to browser requests and fulfilling them by delivering the HTML document to the browser.</li>
+              <li>Web browsers perform two main tasks: parsing and rendering.</li>
+              <li>During the parsing stage, the browser receives raw bytes, which are converted into characters. These characters are then converted into tokens, which in turn are transformed into nodes. These nodes are organized into a tree-like data structure known as the DOM (Document Object Model).</li>
+              <li>Once the DOM tree is constructed, the browser moves on to the rendering stage. At this point, each node in the DOM tree is rendered and displayed on the screen.</li>
+            </ul>
+          </div>
+      </section>
+      <section id="install">
+        <div>
+          <h1 class="gradient-title">HTML Installation</h1>
+          <p>Let's get our hands dirty and start preparing to write some code. In this tutorial, we will install VS Code and some related extensions for faster and more efficient HTML development.</p>
+        </div>
+        <div>
+          <h2>What are the prerequisites to learning HTML?</h2>
+          <p>I can safely say that there are <b>no prerequisites to learning HTML.</b> HTML is the language of the web and is often the first step that web developers take in learning to code.</p>
+          <h3 class="color">Tools needed to make an HTML page:</h3>
+          <ol>
+            <li>HTML Editor: It's a straightforward tool where every piece of HTML content must be written. You can use any text editor of your choice. In this tutorial, we're using Visual Studio Code because it's lightweight and open-source.
+              <br></br>
+            Popular editors for HTML development include text editors like <u>Notepad++</u> and <u>TextEdit</u>, code editors such as <u>Sublime Text</u> and <u>Visual Studio Code</u>, and full-fledged IDEs like <u>WebStorm</u> and <u>Eclipse</u>. Online platforms like <u>CodePen</u> and <u>JSFiddle</u> are also commonly used for quick HTML editing and testing.
+            <br></br>
+            <b>Note:</b> You can write HTML even in a Notepad. Text editors like VS Code make these things easier.
+            </li>
+            <li><b>Browser:</b> HTML tags are not displayed by browsers; instead, they are read and interpreted to render the web page. In a web browser, HTML structures are displayed in a styled and visually appealing form. In this tutorial, we are using Google Chrome. Other commonly used browsers include Chromium, Firefox, Safari on Mac, and Microsoft Edge.</li>
+          </ol>
+        </div>
+        <div>
+          <h2>Installation & Setup of Visual Studio Code for HTML:</h2>
+          <p>We will install and set up HTML to optimize its utility for creating web pages. Additionally, we'll install extensions in Visual Studio Code to enhance its functionality. If you're unsure about which editor to use, you can confidently start with Visual Studio Code. You won't regret it; it's one of the best free code editors available in the market.</p>
+          <ul>
+            <li>Search for "Visual Studio Code download" on Google</li>
+            <li>Download <a href="https://code.visualstudio.com/download">Visual Studio Code</a> for your Operating System. I am using Windows so I will install it for Windows</li>
+          </ul>
+          <p>Here is a quick video showing VS Code Installation:</p>
+          <div>
+            <video width="700" controls muted loop>
+             <source src="../Media/installation.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div>
+          <h2>Live Server Extension</h2>
+          <p>In addition, we'll be installing the Live Server extension in our Visual Studio Code editor to view live reload pages.
+          <br></br>
+          The Live Server extension is used to launch a local development server with a live reload feature for HTML pages.
+          <br></br>
+          Here is a quick video showing the installation of the VS Code 'Live Server' extension:
+          </p>
+          <div>
+            <video width="700" controls muted loop>
+             <source src="../Media/installation2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="execution">
+        <div>
+          <h1 class="gradient-title">HTML Execution</h1>
+          <h2>Your Journey to Creating Your First Website Begins Here!</h2>
+          <p>Let's mark this as an important milestone: the creation of your first website! And what's a better way to start than with the traditional "Hello, World!"?</p>
+        </div>
+        <div>
+          <h2>Why "Hello, World!"?</h2>
+          <p>In the programming world, "Hello, World!" is more than just a phrase. It's a tradition, an emotion, a simple program that teaches you the syntax and gets you started. And guess what? HTML is no different! <br>Our first website will display the text 'Hello World'</p>
+        </div>
+        <div>
+          <h2>Let's Get Started: Setting Up Your VS Code</h2>
+          <p>If you haven't already set up your environment, let's begin by opening <a href="https://code.visualstudio.com/download">Visual Studio Code (VS Code)</a>.</p>
+          <div>
+            <img src="../Media/vs-code-open.png" alt="vs-code-open" width=700px" height="auto" />
+          </div>
+          <h3>Creating a New File</h3>
+          <p>Click on "Open Folder" and open a folder somewhere on your computer. I am opening a folder named html-tutorial.</p>
+          <p>Once VS Code is open, you'll want to create a new file:</p>
+          <ol>
+            <li>Click on the "New File" icon in VS Code.</li>
+            <li>Type the filename as "index.html" and hit Enter.</li>
+          </ol>
+          <h3>Pasting the Code</h3>
+          <p>Now that your file is ready, copy the following code and paste it into your "index.html" file.</p>
+          <div class="code-box">
+            <button class="copy-btn" onclick="copyCode(this)">📋</button>
+            <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            Hello World
+          &lt;/body&gt;
+        &lt;/html&gt;
+            </code>
+          </div>
+          <h3>Going Live using the "live server" extension</h3>
+          <p>To see your webpage in action, locate the "Go Live" icon at the bottom-right corner of your VS Code window and click it. If you don't see this icon, you probably haven't installed the Live Server extension, which we discussed in a previous tutorial.</p>
+          <div>
+            <img src="../Media/vs-code-go-live.png" alt="vs-code-go-live" width="700px" height="auto" />
+          </div>
+          <h3>Your First Website is Live!</h3>
+          <p>Congratulations! If you've followed along, you should now see your very first website displaying the classic "Hello, World!" message.</p>
+          <div>
+            <img src="../Media/hello-world-html.png" alt="hello-world-html" width="700px" height="auto" />
+          </div>
+        </div>
+        <div>
+          <h2>Live Preview Extension</h2>
+          <p>Another useful extension for working with HTML in VS Code is 'HTML Preview.' To install it, simply click on the extensions icon in VS Code and type 'HTML Preview' in the search bar. Install it!</p>
+          <div>
+            <img src="../Media/preview-html-extension.png" alt="preview-html-extension" width="700px" height="auto" />
+          </div>
+          <p>Now, you will see a button within VS Code. Clicking on this button will allow you to preview your HTML right within the editor.</p>
+          <div>
+            <img src="../Media/preview-button-live-html-preview.png" alt="preview-button-live-html-preview" width="700px" height="auto" />
+          </div>
+          <p>Once you click the button, you'll see a live preview of your HTML directly within VS Code.</p>
+          <div>
+            <img src="../Media/live-preview-html-in-action.png" alt="live-preview-html-in-action" width="700px" height="auto" />
+          </div>
+          <p>You don't even need a browser to render plain HTML. This live preview feature in VS Code is perfect for this HTML tutorial, allowing you to build and preview your entire HTML website without ever leaving the editor.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <section class="footer-section">
+    <footer>
+      <p>© 2025 CodeCrafters | Made with 💻 by CodeCrafters</p>
+    </footer>
+  </section>
+  <script src="html-script.js"></script>
+</body>
+</html>

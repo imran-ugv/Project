@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+  }
+  
+  .thankyou-box {
+    max-width: 750px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  
+  .thankyou-box h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #9b5de5, #f15bb5, #fee440);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s infinite linear;
+  }
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  
+  .thankyou-box p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .thankyou-box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .thankyou-box a:hover {
+    background: #ddd;
+  }
+  
