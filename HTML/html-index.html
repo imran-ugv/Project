@@ -36,11 +36,11 @@
         <li><a href="#install">HTML Installation</a></li>
         <li><a href="#execution">HTML Execution</a></li>
         <li><a href="#structure">HTML Page Structure</a></li>
-        <li>HTML Tags</li>
-        <li>HTML Elements</li>
-        <li>HTML Attributes</li>
-        <li>HTML Comments</li>
-        <li>HTML id & Class</li>
+        <li><a href="#tags">HTML Tags</a></li>
+        <li><a href="#elements">HTML Elements</a></li>
+        <li><a href="#attributes">HTML Attributes</a></li>
+        <li><a href="#comments">HTML Comments</a></li>
+        <li><a href="#id-classes">HTML id & Class</a></li>
         <li>Skeleton Tags</li>
         <li>Heading Tags</li>
         <li>Paragraphs Tag</li>
@@ -315,6 +315,484 @@
           </div>
           <p>You don't even need a browser to render plain HTML. This live preview feature in VS Code is perfect for this HTML tutorial, allowing you to build and preview your entire HTML website without ever leaving the editor.</p>
         </div>
+      </section>
+      <section id="structure">
+        <h2 class="gradient-title">HTML Page Structure</h2>
+      
+        <p>HTML (Hypertext Markup Language) provides the basic structure for web pages. An HTML document has a well-defined structure that outlines how a page is organized. Below is a breakdown of the HTML page structure:</p>
+      
+        <h3>1. Doctype Declaration</h3>
+        <p>The <code>&lt;!DOCTYPE html&gt;</code> declaration tells the browser that the document is an HTML5 document. It should always be the first thing in your HTML file.</p>
+        <div class="code-box">
+          <code>
+            &lt;!DOCTYPE html&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>2. HTML Tag</h3>
+        <p>The <code>&lt;html&gt;</code> tag is the root element of the HTML document. All other elements are contained within it.</p>
+        <p><strong>Example:</strong></p>
+        <div class="code-box">
+          <code>
+            &lt;html lang="en"&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+        <p><i>lang="en" specifies that the language of the document is English.</i></p>
+      
+        <h3>3. Head Section</h3>
+        <p>The <code>&lt;head&gt;</code> section contains meta-information about the HTML document, such as its title, character encoding, and linked external resources like CSS stylesheets or scripts.</p>
+        <p><strong>Meta Tags:</strong> Provide information about the document (such as character set and author).</p>
+        <p><strong>Title Tag:</strong> Defines the title of the document, which appears in the browser tab.</p>
+        <p><strong>Link Tag:</strong> Used to link external resources such as stylesheets.</p>
+        <p><strong>Script Tag:</strong> Used to link or embed JavaScript files (although typically placed just before the closing &lt;/body&gt; tag).</p>
+        
+        <p><strong>Example of the Head Section:</strong></p>
+        <div class="code-box">
+          <code>
+            &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="description" content="An example of HTML page structure"&gt;
+            &lt;meta name="author" content="Your Name"&gt;
+            &lt;title&gt;HTML Page Structure&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>4. Body Section</h3>
+        <p>The <code>&lt;body&gt;</code> section contains the content that will be visible to the users on the web page. This includes text, images, links, and other elements that make up the main content of the page.</p>
+        
+        <p><strong>Example of the Body Section:</strong></p>
+        <div class="code-box">
+          <code>
+            &lt;body&gt;
+            &lt;header&gt;
+            &lt;h1&gt;Welcome to HTML Page Structure&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;section&gt;
+            &lt;p&gt;This is an example of how to structure an HTML page.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;footer&gt;
+            &lt;p&gt;&copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
+            &lt;/footer&gt;
+            &lt;/body&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>5. Footer Section</h3>
+        <p>The <code>&lt;footer&gt;</code> tag typically appears at the bottom of the page and contains information such as copyright, privacy policy links, or contact information.</p>
+      
+        <p><strong>Example of a Footer Section:</strong></p>
+        <div class="code-box">
+          <code>
+            &lt;footer&gt;
+            &lt;p&gt;&copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
+            &lt;/footer&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>Complete Example:</h3>
+        <div class="code-box">
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="description" content="An example of HTML page structure"&gt;
+            &lt;meta name="author" content="Your Name"&gt;
+            &lt;title&gt;HTML Page Structure&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;header&gt;
+            &lt;h1&gt;Welcome to HTML Page Structure&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;section&gt;
+            &lt;p&gt;This is an example of how to structure an HTML page.&lt;/p&gt;
+            &lt;/section&gt;
+            &lt;footer&gt;
+            &lt;p&gt;&copy; 2025 Your Name. All rights reserved.&lt;/p&gt;
+            &lt;/footer&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>Key Points to Remember:</h3>
+        <ul>
+          <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration is required to ensure the document is interpreted as HTML5.</li>
+          <li>The <code>&lt;html&gt;</code> element is the root element of the HTML page.</li>
+          <li>The <code>&lt;head&gt;</code> section contains metadata about the document, such as the title and links to external resources like stylesheets.</li>
+          <li>The <code>&lt;body&gt;</code> section contains the actual content displayed on the webpage.</li>
+          <li>The <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, and <code>&lt;section&gt;</code> tags help organize content semantically.</li>
+        </ul>
+      </section>           
+      <section id="tags">
+        <h2 class="gradient-title">HTML Tags</h2>
+        
+        <p>HTML tags are the building blocks of an HTML document. Tags are used to define elements on the page. Every HTML document is made up of different tags that indicate how the content should be displayed.</p>
+        
+        <h3>🔹 What Are HTML Tags?</h3>
+        <p>An HTML tag is used to mark the beginning and the end of an HTML element. Tags usually come in pairs, with an opening tag and a closing tag, although some tags do not have a closing tag.</p>
+        
+        <h4>Example of a Tag:</h4>
+        <div class="code-box">
+          <code>
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 Types of HTML Tags:</h3>
+        <ul>
+          <li><strong>Empty Tags (Self-closing tags):</strong> These tags do not require a closing tag. They are used to insert elements like images, line breaks, etc.</li>
+          <li><strong>Paired Tags:</strong> These tags come in pairs: an opening tag and a closing tag. The closing tag is the same as the opening tag but with a forward slash (<code>/</code>) before the tag name.</li>
+        </ul>
+      
+        <h3>🔹 Common HTML Tags:</h3>
+        <ul>
+          <li><strong>&lt;html&gt;</strong>: The root element that contains all the content of the web page.</li>
+          <li><strong>&lt;head&gt;</strong>: Contains meta-information about the document like title, character encoding, etc.</li>
+          <li><strong>&lt;body&gt;</strong>: Contains the visible content of the page, like text, images, etc.</li>
+          <li><strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Heading tags, used to define headings. &lt;h1&gt; is the largest, and &lt;h6&gt; is the smallest.</li>
+          <li><strong>&lt;p&gt;</strong>: Paragraph tag, used to define blocks of text.</li>
+          <li><strong>&lt;b&gt;</strong>: Bold text.</li>
+          <li><strong>&lt;i&gt;</strong>: Italic text.</li>
+          <li><strong>&lt;u&gt;</strong>: Underlined text.</li>
+          <li><strong>&lt;a&gt;</strong>: Anchor tag, used to create hyperlinks.</li>
+          <li><strong>&lt;img&gt;</strong>: Image tag, used to embed images.</li>
+          <li><strong>&lt;ul&gt;</strong>: Unordered list.</li>
+          <li><strong>&lt;ol&gt;</strong>: Ordered list.</li>
+          <li><strong>&lt;li&gt;</strong>: List item, used inside &lt;ul&gt; or &lt;ol&gt;.</li>
+        </ul>
+        
+        <h3>🔹 Example of HTML Tags in Action:</h3>
+        <div class="code-box">
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;HTML Tags Example&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Understanding HTML Tags&lt;/h1&gt;
+                &lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; paragraph with &lt;i&gt;italic&lt;/i&gt; and &lt;u&gt;underlined&lt;/u&gt; text.&lt;/p&gt;
+                &lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+                &lt;img src="image.jpg" alt="An example image"&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🧠 Pro Tips:</h3>
+        <ul>
+          <li>Always make sure to use paired tags where needed.</li>
+          <li>For tags like <code>&lt;img&gt;</code>, use the <code>alt</code> attribute to improve accessibility.</li>
+          <li>HTML tags are case-insensitive, but it's a good practice to use lowercase letters.</li>
+          <li>Avoid leaving tags open or unclosed, as this can lead to layout issues.</li>
+        </ul>
+      </section> 
+      <section id="elements">
+        <h2 class="gradient-title">HTML Elements</h2>
+        
+        <p>HTML elements are the building blocks of a web page. They define the structure and content of the page. An HTML element typically consists of an opening tag, content, and a closing tag. In some cases, an element might be self-closing, meaning it doesn't require a closing tag.</p>
+      
+        <h3>🔹 What Are HTML Elements?</h3>
+        <p>An HTML element is a container for content and is defined by tags. Each element can have attributes that provide additional information about it, and these attributes are placed inside the opening tag.</p>
+        
+        <h4>Structure of an HTML Element:</h4>
+        <div class="code-box">
+          <code>
+            &lt;tagname&gt;Content goes here&lt;/tagname&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 Types of HTML Elements:</h3>
+        <ul>
+          <li><strong>Structural Elements:</strong> These elements help organize the layout and structure of the webpage.</li>
+          <li><strong>Text Formatting Elements:</strong> These elements are used to format text and control its appearance.</li>
+          <li><strong>Link and Media Elements:</strong> These elements link to other resources or display media like images, audio, and video.</li>
+          <li><strong>List Elements:</strong> These elements are used to create different types of lists.</li>
+          <li><strong>Form Elements:</strong> These elements are used for creating forms.</li>
+        </ul>
+      
+        <h3>🔹 Example of HTML Elements in Action:</h3>
+        <div class="code-box">
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;HTML Elements Example&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Understanding HTML Elements&lt;/h1&gt;
+                &lt;p&gt;This is an example of using HTML elements to structure content.&lt;/p&gt;
+        
+                &lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+        
+                &lt;img src="image.jpg" alt="Example Image"&gt;
+        
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+        
+                &lt;form&gt;
+                    &lt;input type="text" placeholder="Enter your name"&gt;
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🧠 Pro Tips:</h3>
+        <ul>
+          <li>Use semantic HTML elements for better accessibility and SEO.</li>
+          <li>Always close your tags properly, especially for non-self-closing elements.</li>
+          <li>Use the correct tags for the content type, e.g., &lt;a&gt; for links and &lt;img&gt; for images.</li>
+          <li>Remember that some elements are self-closing, such as &lt;img&gt; and &lt;br&gt;, and do not need closing tags.</li>
+        </ul>
+      </section> 
+      <section id="attributes">
+        <h2 class="gradient-title">HTML Attributes</h2>
+        
+        <p>HTML attributes provide additional information about an element. They are always placed inside the opening tag and usually come in name-value pairs. Attributes help define the behavior or appearance of elements on the webpage.</p>
+      
+        <h3>🔹 What Are HTML Attributes?</h3>
+        <p>HTML attributes define specific properties for an element. They are used to configure or modify the behavior of HTML elements. Common attributes include <code>id</code>, <code>class</code>, <code>src</code>, <code>href</code>, and <code>style</code>.</p>
+      
+        <h4>Syntax of HTML Attributes:</h4>
+        <div class="code-box">
+          <code>
+            &lt;tagname attribute="value"&gt;Content goes here&lt;/tagname&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 Common HTML Attributes:</h3>
+        <ul>
+          <li><strong>id Attribute:</strong> The <code>id</code> attribute assigns a unique identifier to an element. This can be used to apply specific styles or JavaScript functionality.</li>
+          <li><strong>class Attribute:</strong> The <code>class</code> attribute is used to assign one or more class names to an element. This allows you to apply CSS styles to multiple elements.</li>
+          <li><strong>href Attribute:</strong> The <code>href</code> attribute is used to specify the URL of a link.</li>
+          <li><strong>src Attribute:</strong> The <code>src</code> attribute specifies the source file for an image, audio, or video.</li>
+          <li><strong>alt Attribute:</strong> The <code>alt</code> attribute provides an alternative text description for an image, which is important for accessibility.</li>
+          <li><strong>style Attribute:</strong> The <code>style</code> attribute is used to apply inline CSS to an element.</li>
+        </ul>
+      
+        <h3>🔹 Example of HTML Attributes in Action:</h3>
+        <div class="code-box">
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;HTML Attributes Example&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1 id="main-header"&gt;Welcome to HTML Attributes&lt;/h1&gt;
+      
+                &lt;p class="highlight"&gt;This paragraph has a class attribute applied.&lt;/p&gt;
+      
+                &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;
+      
+                &lt;img src="image.jpg" alt="An example image" width="300"&gt;
+      
+                &lt;p style="font-size: 20px;"&gt;This paragraph has inline CSS applied.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🧠 Pro Tips:</h3>
+        <ul>
+          <li>Always use meaningful values for attributes like <code>id</code> and <code>class</code> for better readability and maintainability.</li>
+          <li>For better accessibility, use the <code>alt</code> attribute in all image tags.</li>
+          <li>The <code>href</code> attribute in anchor tags is essential for navigation, and <code>target="_blank"</code> opens links in a new tab.</li>
+          <li>Use the <code>style</code> attribute sparingly and prefer external stylesheets for maintainability.</li>
+        </ul>
+      </section>
+      <section id="comments">
+        <h2 class="gradient-title">HTML Comments</h2>
+        
+        <p>HTML comments are used to insert notes or explanations in your HTML code. Comments are not displayed in the browser and are purely for the developers' reference. They are useful for explaining sections of the code, leaving reminders, or temporarily disabling certain code without deleting it.</p>
+      
+        <h3>🔹 Syntax of HTML Comments:</h3>
+        <div class="code-box">
+          <code>
+            &lt;!-- This is a comment --&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <p>Comments can span multiple lines:</p>
+        <div class="code-box">
+          <code>
+            &lt;!--
+              This is a multi-line comment.
+              It can span across multiple lines.
+            --&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 Why Use HTML Comments?</h3>
+        <ul>
+          <li><strong>Code Documentation:</strong> Comments can help explain what the code is doing, making it easier for others (or yourself) to understand the logic when revisiting the code later.</li>
+          <li><strong>Temporarily Disable Code:</strong> You can comment out code to temporarily disable it during testing or debugging without deleting it.</li>
+          <li><strong>Provide Instructions or Reminders:</strong> Comments are often used to leave instructions or reminders for other developers who may be working on the code.</li>
+        </ul>
+      
+        <h3>🔹 Example of HTML Comments:</h3>
+        <div class="code-box">
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;HTML Comments Example&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to HTML Comments&lt;/h1&gt;
+                &lt;!-- This is a single-line comment --&gt;
+                &lt;p&gt;This paragraph is visible in the browser.&lt;/p&gt;
+      
+                &lt;!--
+                    This is a multi-line comment.
+                    It can be used to provide additional information.
+                    The following section of the page is under development.
+                --&gt;
+                &lt;p&gt;More content coming soon!&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🧠 Pro Tips:</h3>
+        <ul>
+          <li>Use comments to explain complex code or to clarify your intent.</li>
+          <li>Avoid over-commenting simple or self-explanatory code.</li>
+          <li>Be cautious not to leave sensitive or unnecessary information in comments.</li>
+          <li>HTML comments are visible in the source code but not rendered in the browser.</li>
+        </ul>
+      </section> 
+      <section id="id-classes">
+        <h2 class="gradient-title">HTML Id & Classes</h2>
+        
+        <p>In HTML, the <code>id</code> and <code>class</code> attributes are used to identify elements and apply styles or JavaScript functionality to them. They are essential for styling, accessibility, and manipulating elements with JavaScript.</p>
+      
+        <h3>🔹 HTML id Attribute</h3>
+        <p>The <code>id</code> attribute uniquely identifies an HTML element. It must be unique within a document, meaning no two elements can have the same <code>id</code>.</p>
+        
+        <p><strong>Usage</strong>: The <code>id</code> is commonly used to target a specific element for styling or to reference it in JavaScript.</p>
+      
+        <h3>Example of <code>id</code> in HTML:</h3>
+        <div class="code-box">
+          <code>
+            &lt;div id="header"&gt;This is a unique header&lt;/div&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <p>You can style an element with a specific <code>id</code> using CSS:</p>
+        <div class="code-box">
+          <code>
+            #header &#123;
+              background-color: lightblue;
+              padding: 10px;
+              font-size: 20px;
+            &#125;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 HTML class Attribute</h3>
+        <p>The <code>class</code> attribute is used to define a group of elements that share the same styles or functionality. Unlike <code>id</code>, a class can be reused across multiple elements.</p>
+      
+        <h3>Example of <code>class</code> in HTML:</h3>
+        <div class="code-box">
+          <code>
+            &lt;p class="intro"&gt;This is an introductory paragraph.&lt;/p&gt;
+            &lt;p class="intro"&gt;This is another introductory paragraph.&lt;/p&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <p>You can style all elements with the same <code>class</code> using CSS:</p>
+        <div class="code-box">
+          <code>
+            .intro &#123;
+              color: darkblue;
+              font-family: Arial, sans-serif;
+            &#125;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 Combining <code>id</code> and <code>class</code></h3>
+        <p>You can use both <code>id</code> and <code>class</code> together on the same element. This allows you to take advantage of both unique and reusable styles or functionality.</p>
+      
+        <h3>Example of both <code>id</code> and <code>class</code>:</h3>
+        <div class="code-box">
+          <code>
+            &lt;div id="main-header" class="header-style"&gt;This is a main header&lt;/div&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🔹 Key Differences Between <code>id</code> and <code>class</code>:</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th><code>id</code></th>
+              <th><code>class</code></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Uniqueness</strong></td>
+              <td>Must be unique within a page</td>
+              <td>Can be reused on multiple elements</td>
+            </tr>
+            <tr>
+              <td><strong>Purpose</strong></td>
+              <td>Identifies a single element</td>
+              <td>Identifies a group of elements</td>
+            </tr>
+            <tr>
+              <td><strong>Targeting in CSS</strong></td>
+              <td><code>#id</code> selector</td>
+              <td><code>.class</code> selector</td>
+            </tr>
+            <tr>
+              <td><strong>JavaScript Usage</strong></td>
+              <td><code>document.getElementById("id")</code></td>
+              <td><code>document.getElementsByClassName("class")</code></td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>🧠 Pro Tips:</h3>
+        <ul>
+          <li>Use <code>id</code> when you want to uniquely identify an element (e.g., for anchor links or JavaScript manipulation).</li>
+          <li>Use <code>class</code> when you need to apply the same style or behavior to multiple elements.</li>
+          <li>Both <code>id</code> and <code>class</code> can be used together, but the <code>id</code> should remain unique on the page.</li>
+        </ul>
       </section>
 
     </main>
