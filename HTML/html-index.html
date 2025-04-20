@@ -56,8 +56,8 @@
         <li><a href="#html-ordered-list">HTML Ordered List</a></li>
         <li><a href="#html-definition-list">HTML Definition Lists</a></li>
         <li><a href="#html-tables">HTML Tables</a></li>
-        <li>More on Tables</li>
-        <li>Introduction to HTML Forms</li>
+        <li><a href="#more-on-tables">More on Tables</a></li>
+        <li><a href="#introduction-to-html-forms">Introduction to HTML Forms</a></li>
         <li>HTML Input Types</li>
         <li>Textarea and Select</li>
         <li>More on Forms</li>
@@ -2228,119 +2228,252 @@
           </tr>
         </table>
       </section>
-      <section class="content-section" id="more-on-tables">
-        <h2>HTML More on Tables</h2>
+      <section id="more-on-tables">
+        <h2 class="gradient-title">More on HTML Tables</h2>
       
-        <p>While the <strong>basic table structure</strong> helps organize content in rows and columns, HTML provides additional features to create more advanced and flexible tables.</p>
+        <p>HTML tables aren't just about rows and columns—they offer flexibility to organize data in a visually appealing way. Beyond basic tables, HTML provides additional tags and attributes to merge cells, create headers that span multiple columns or rows, and define complex table structures.</p>
       
+        <h3>Why Learn Advanced Table Features?</h3>
         <ul>
-          <li>Merging cells (<code>colspan</code> and <code>rowspan</code>)</li>
-          <li>Adding table borders and spacing</li>
-          <li>Nesting tables (tables inside tables)</li>
+          <li>A class routine where subjects span multiple periods.</li>
+          <li>A price list where a product has multiple variants under the same category.</li>
+          <li>A report card where some rows contain subject-wise marks, and others have overall scores.</li>
         </ul>
       
-        <h3>1. Merging Cells with <code>colspan</code> and <code>rowspan</code></h3>
+        <p>To design these, you'll need advanced table features like:</p>
       
-        <h4><code>colspan</code>: Merge columns</h4>
-        <div class="code-container">
-          <button class="copy-btn">Copy</button>
-          <pre><code>&lt;table border="1"&gt;
-        &lt;tr&gt;
-          &lt;th colspan="2"&gt;Full Name&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;First Name&lt;/td&gt;
-          &lt;td&gt;Last Name&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/table&gt;</code></pre>
-        </div>
+        <h3>Table: List of Advanced Table Features</h3>
+        <table class="styled-table">
+          <tr>
+            <th>Feature</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>colspan</td>
+            <td>Allows a cell to span across multiple columns.</td>
+          </tr>
+          <tr>
+            <td>rowspan</td>
+            <td>Allows a cell to span across multiple rows.</td>
+          </tr>
+          <tr>
+            <td>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</td>
+            <td>Semantically group table rows into header, body, and footer.</td>
+          </tr>
+          <tr>
+            <td>Nested Tables</td>
+            <td>A table inside another table—for organizing highly structured data.</td>
+          </tr>
+        </table>
       
-        <h4><code>rowspan</code>: Merge rows</h4>
-        <div class="code-container">
-          <button class="copy-btn">Copy</button>
-          <pre><code>&lt;table border="1"&gt;
-        &lt;tr&gt;
-          &lt;th rowspan="2"&gt;Subject&lt;/th&gt;
-          &lt;td&gt;Math&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Science&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/table&gt;</code></pre>
-        </div>
-      
-        <h3>2. Add Border Spacing and Padding</h3>
-        <div class="code-container">
-          <button class="copy-btn">Copy</button>
-          <pre><code>&lt;table class="spacing-table"&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Name&lt;/th&gt;
-          &lt;th&gt;Age&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Alice&lt;/td&gt;
-          &lt;td&gt;24&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Bob&lt;/td&gt;
-          &lt;td&gt;29&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/table&gt;</code></pre>
-        </div>
-      
-        <h3>3. Nested Tables</h3>
-        <div class="code-container">
-          <button class="copy-btn">Copy</button>
-          <pre><code>&lt;table border="1"&gt;
-        &lt;tr&gt;
-          &lt;th&gt;Department&lt;/th&gt;
-          &lt;th&gt;Employees&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;HR&lt;/td&gt;
-          &lt;td&gt;
+        <h3>Example: Class Routine Using <code>colspan</code></h3>
+        <div class="code-box">
+          <code>
             &lt;table border="1"&gt;
-              &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;/tr&gt;
-              &lt;tr&gt;&lt;td&gt;Bob&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Time&lt;/th&gt;
+                &lt;th&gt;Monday&lt;/th&gt;
+                &lt;th&gt;Tuesday&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;9AM - 10AM&lt;/td&gt;
+                &lt;td&gt;Math&lt;/td&gt;
+                &lt;td&gt;English&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;10AM - 11AM&lt;/td&gt;
+                &lt;td&gt;Science&lt;/td&gt;
+                &lt;td&gt;History&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;11AM - 12PM&lt;/td&gt;
+                &lt;td colspan="2"&gt;Break&lt;/td&gt;
+              &lt;/tr&gt;
             &lt;/table&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/table&gt;</code></pre>
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
         </div>
       
-        <h3>Summary Table</h3>
+        <h3>Output Preview:</h3>
+        <table class="styled-table">
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+          </tr>
+          <tr>
+            <td>9AM - 10AM</td>
+            <td>Math</td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td>10AM - 11AM</td>
+            <td>Science</td>
+            <td>History</td>
+          </tr>
+          <tr>
+            <td>11AM - 12PM</td>
+            <td colspan="2">Break</td>
+          </tr>
+        </table>
+      </section>
+        
+      <section id="introduction-to-html-forms">
+        <h2>Introduction to HTML Forms</h2>
+        <p>Forms are an essential part of web development because they allow users to interact with a website by submitting data. Whether it's logging in, registering for an account, submitting feedback, or making a payment, forms help collect and send user input to a web server for processing.</p>
+        <p>HTML forms consist of various elements like text fields, radio buttons, checkboxes, drop-down lists, and buttons. These elements help users provide their information in a structured way.</p>
+      
+        <h3>Why Are Forms Important?</h3>
+        <p>Forms are critical for interactive web applications and provide various functionalities such as:</p>
+        <ul>
+          <li><strong>User Registration:</strong> Collecting user details for creating accounts.</li>
+          <li><strong>Feedback Submission:</strong> Enabling users to provide feedback on services.</li>
+          <li><strong>Search Features:</strong> Allowing users to search for content within a website.</li>
+          <li><strong>Payment Processing:</strong> Collecting payment details for transactions.</li>
+        </ul>
+      
+        <h3>HTML Form Structure</h3>
+        <p>An HTML form is created using the <code>&lt;form&gt;</code> element, which contains different input fields like text boxes, radio buttons, checkboxes, and more. Here's the basic structure of an HTML form:</p>
+        
+        <div class="code-box">
+          <code>
+            &lt;form action="submit-form.php" method="POST"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+            &lt;label for="message"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message" name="message" rows="4" cols="50" required&gt;&lt;/textarea&gt;
+            &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>Example: Contact Form</h3>
+        <p>Here’s an example of a simple contact form where users can submit their name, email, and message:</p>
+        
+        <div class="code-box">
+          <code>
+            &lt;form action="submit-form.php" method="POST"&gt;
+            &lt;h2&gt;Contact Us&lt;/h2&gt;
+            &lt;label for="name"&gt;Full Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name" required&gt;
+            &lt;label for="email"&gt;Email Address:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+            &lt;label for="message"&gt;Message:&lt;/label&gt;
+            &lt;textarea id="message" name="message" rows="5" required&gt;&lt;/textarea&gt;
+            &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>Key Form Elements</h3>
+      
+        <h4>1. Input Fields</h4>
+        <p>The <code>&lt;input&gt;</code> element is used to collect text data from users, like a username, password, etc.</p>
+      
+        <div class="code-box">
+          <code>
+            &lt;input type="text" id="username" name="username" placeholder="Enter your username" required&gt;
+            &lt;input type="password" id="password" name="password" placeholder="Enter your password" required&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Expected Output for Input Fields:</h4>
+        <p>The user will be able to fill in a username and password. The password field will hide the characters for privacy.</p>
+      
+        <h4>2. Radio Buttons</h4>
+        <p>Radio buttons allow the user to select one option from a set.</p>
+      
+        <div class="code-box">
+          <code>
+            &lt;label for="male"&gt;Male&lt;/label&gt;
+            &lt;input type="radio" id="male" name="gender" value="male"&gt;
+            &lt;label for="female"&gt;Female&lt;/label&gt;
+            &lt;input type="radio" id="female" name="gender" value="female"&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Expected Output for Radio Buttons:</h4>
+        <p>Gender selection: The user can only choose one option, either "Male" or "Female".</p>
+      
+        <h4>3. Checkboxes</h4>
+        <p>Checkboxes allow users to select one or more options.</p>
+      
+        <div class="code-box">
+          <code>
+            &lt;label for="subscribe"&gt;Subscribe to Newsletter&lt;/label&gt;
+            &lt;input type="checkbox" id="subscribe" name="subscribe"&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Expected Output for Checkboxes:</h4>
+        <p>The user can choose to subscribe to the newsletter by checking the box.</p>
+      
+        <h4>4. Drop-down Menu</h4>
+        <p>A drop-down menu allows users to select one option from a list of choices.</p>
+      
+        <div class="code-box">
+          <code>
+            &lt;label for="country"&gt;Country:&lt;/label&gt;
+            &lt;select id="country" name="country"&gt;
+              &lt;option value="usa"&gt;United States&lt;/option&gt;
+              &lt;option value="canada"&gt;Canada&lt;/option&gt;
+              &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+            &lt;/select&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Expected Output for Drop-down Menu:</h4>
+        <p>The user can select their country from a drop-down list of options.</p>
+      
+        <h3>Form Submission</h3>
+        <p>Once the user fills out the form, they can submit it by clicking the <strong>Submit</strong> button. The data will be sent to the URL specified in the <code>action</code> attribute using the HTTP method (GET or POST) defined in the <code>method</code> attribute.</p>
+      
+        <h3>Summary of Key Form Elements</h3>
         <table class="styled-table">
           <thead>
             <tr>
-              <th>Feature</th>
-              <th>Tag/Attribute</th>
-              <th>Purpose</th>
+              <th>Form Element</th>
+              <th>Description</th>
+              <th>Expected Output</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Merge columns</td>
-              <td><code>colspan</code></td>
-              <td>Combines multiple columns into one</td>
+              <td>Text Input</td>
+              <td>A single-line text field for entering personal information.</td>
+              <td>Username: <input type="text" value="john_doe" disabled></td>
             </tr>
             <tr>
-              <td>Merge rows</td>
-              <td><code>rowspan</code></td>
-              <td>Combines multiple rows into one</td>
+              <td>Password Input</td>
+              <td>A field that hides the input characters.</td>
+              <td>Password: <input type="password" value="******" disabled></td>
             </tr>
             <tr>
-              <td>Table spacing</td>
-              <td><code>border-spacing</code></td>
-              <td>Adds space between table cells</td>
+              <td>Radio Button</td>
+              <td>Allows selection of one option from a set.</td>
+              <td>Gender: Male (radio button selected)</td>
             </tr>
             <tr>
-              <td>Nested table</td>
-              <td><code>&lt;table&gt; inside &lt;td&gt;</code></td>
-              <td>Allows complex table structures</td>
+              <td>Checkbox</td>
+              <td>Allows users to select one or more options.</td>
+              <td>Subscribed: Checked</td>
+            </tr>
+            <tr>
+              <td>Drop-down Menu</td>
+              <td>A list of options for the user to select from.</td>
+              <td>Country: United States</td>
             </tr>
           </tbody>
         </table>
-      </section>    
+      </section>      
       
     </main>
   </div>
