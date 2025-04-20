@@ -80,7 +80,6 @@
     margin: 0;
   }
   
-  
   .hero h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -91,19 +90,15 @@
     background: linear-gradient(90deg, #9b5de5, #f15bb5, #fee440);
     background-size: 300% 300%;
     background-clip: text;
-    background-clip: text;
-    background-clip: text;
-    background-clip: text;
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
     border-right: 2px solid rgba(255, 255, 255, 0.75); /* Cursor */
     animation:
-      typing 3s steps(24) 0.8s forwards,
-      blink 0.7s step-end 0.8s 6; /* blink only during typing */
+      typing 6s steps(24) 0.8s infinite alternate, /* Infinite forward and backward typing */
+      blink 0.7s step-end 0.8s 6; /* Blink only during typing */
   }
-
+  
   .hero h2 {
     font-size: 3rem;
     font-weight: 600;
@@ -112,9 +107,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientShift 5s infinite linear;
-  }  
+  }
   
-
   /* Typing animation */
   @keyframes typing {
     from {
@@ -143,43 +137,43 @@
   }
   
   /* Hero Button Container */
-.hero-buttons {
-  margin-top: 2rem;
-}
-
-/* Add glow animation keyframes */
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 10px #9b5de5;
+  .hero-buttons {
+    margin-top: 2rem;
   }
-  50% {
-    box-shadow: 0 0 20px #f15bb5, 0 0 30px #fee440;
+  
+  /* Add glow animation keyframes */
+  @keyframes glowPulse {
+    0% {
+      box-shadow: 0 0 10px #9b5de5;
+    }
+    50% {
+      box-shadow: 0 0 20px #f15bb5, 0 0 30px #fee440;
+    }
+    100% {
+      box-shadow: 0 0 10px #9b5de5;
+    }
   }
-  100% {
-    box-shadow: 0 0 10px #9b5de5;
+  
+  /* Button styling */
+  .start-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(90deg, #9b5de5, #f15bb5, #fee440);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    animation: glowPulse 2s infinite;
   }
-}
-
-/* Button styling */
-.start-btn {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background: linear-gradient(90deg, #9b5de5, #f15bb5, #fee440);
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 15px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-  animation: glowPulse 2s infinite;
-}
-
-/* Hover effect */
-.start-btn:hover {
-  transform: scale(1.07);
-  cursor: pointer;
-}
+  
+  /* Hover effect */
+  .start-btn:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }  
 
   
   /* Main Content Section */
