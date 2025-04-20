@@ -61,19 +61,19 @@
         <li><a href="#html-input-types">HTML Input Types</a></li>
         <li><a href="#html-textarea-select">Textarea and Select</a></li>
         <li><a href="#html-more-on-forms">More on Forms</a></li>
-        <li>HTML Meta Tags</li>
-        <li>Link and Script Tags</li>
-        <li>Video and Audio tags</li>
-        <li>SVG in HTML</li>
-        <li>iFrames in HTML</li>
-        <li>HTML Code tags</li>
-        <li>HTML Semantic tags</li>
-        <li>HTML Canvas</li>
-        <li>HTML Global Attributes</li>
-        <li>HTML Entities</li>
-        <li>HTML Quotation Tag</li>
-        <li>Obsolete HTML Tag</li>
-        <li>Character Sets</li>
+        <li><a href="#html-meta-tags">HTML Meta Tags</a></li>
+        <li><a href="#html-link-script-tags">Link and Script Tags</a></li>
+        <li><a href="#html-video-audio-tags">Video and Audio tags</a></li>
+        <li><a href="#html-svg">SVG in HTML</a></li>
+        <li><a href="#html-iframes">iFrames in HTML</a></li>
+        <li><a href="#html-code-tags">HTML Code tags</a></li>
+        <li><a href="#html-semantic-tags">HTML Semantic tags</a></li>
+        <li><a href="#html-canvas">HTML Canvas</a></li>
+        <li><a href="#html-global-attributes">HTML Global Attributes</a></li>
+        <li><a href="#html-entities">HTML Entities</a></li>
+        <li><a href="#html-quotation-tag">HTML Quotation Tag</a></li>
+        <li><a href="#html-obsolete-tags">Obsolete HTML Tag</a></li>
+        <li><a href="#html-character-sets">Character Sets</a></li>
       </ul>
     </aside>
 
@@ -2698,6 +2698,996 @@
           </label><br><br>
           <button type="submit">Submit</button>
         </form>
+      </section>
+      <section id="html-meta-tags">
+        <h2 class="gradient-title">HTML Meta Tags</h2>
+      
+        <p>Meta tags provide metadata about the HTML document, such as the page description, keywords, author, and viewport settings. These tags are placed inside the <code>&lt;head&gt;</code> section of the HTML document and are used by search engines, browsers, and other web services.</p>
+      
+        <h3>📝 Common Meta Tags:</h3>
+        <ul>
+          <li><code>&lt;meta charset="UTF-8"&gt;</code> – Defines the character encoding for the document.</li>
+          <li><code>&lt;meta name="description" content="..."&gt;</code> – Provides a brief description of the page, used by search engines for search results.</li>
+          <li><code>&lt;meta name="keywords" content="..."&gt;</code> – Lists keywords relevant to the page, helping search engines understand the content.</li>
+          <li><code>&lt;meta name="author" content="..."&gt;</code> – Specifies the name of the author of the document.</li>
+          <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> – Helps with responsive design by controlling the viewport's dimensions.</li>
+          <li><code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code> – Ensures that the page is rendered using the latest version of Internet Explorer.</li>
+        </ul>
+      
+        <h3>💡 Why Meta Tags are Important:</h3>
+        <ul>
+          <li><strong>SEO</strong>: Meta tags, especially description and keywords, play a key role in improving search engine optimization (SEO).</li>
+          <li><strong>Social Media Integration</strong>: Meta tags like Open Graph or Twitter Cards allow you to customize how content is displayed when shared on social media.</li>
+          <li><strong>Responsive Design</strong>: The <code>viewport</code> meta tag is essential for creating mobile-friendly web pages.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="description" content="Learn HTML with practical examples"&gt;
+          &lt;meta name="keywords" content="HTML, tutorial, web development"&gt;
+          &lt;meta name="author" content="Your Name"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+          &lt;title&gt;HTML Meta Tags Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Welcome to the HTML Meta Tags Tutorial&lt;/h1&gt;
+          &lt;p&gt;This page demonstrates the use of meta tags in HTML&lt;/p&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>The meta tags will not appear on the page itself but can be viewed in the page's source code or used by search engines, browsers, and social media platforms.</p>
+      </section>
+      <section id="html-link-script-tags">
+        <h2 class="gradient-title">Link and Script Tags</h2>
+      
+        <p>The <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags are essential in connecting your HTML document to external resources and functionality.</p>
+      
+        <h3>📝 <code>&lt;link&gt;</code> Tag</h3>
+        <p>The <code>&lt;link&gt;</code> tag is used to link external resources, such as stylesheets (CSS), icons, and more, to the HTML document. It is placed within the <code>&lt;head&gt;</code> section.</p>
+        <ul>
+          <li><code>rel</code>: Specifies the relationship between the current document and the linked file (e.g., "stylesheet" for CSS).</li>
+          <li><code>href</code>: The URL of the linked resource.</li>
+          <li><code>type</code>: Specifies the type of content being linked (e.g., "text/css" for CSS files).</li>
+        </ul>
+      
+        <h3>📝 <code>&lt;script&gt;</code> Tag</h3>
+        <p>The <code>&lt;script&gt;</code> tag is used to include JavaScript files in the HTML document. It can be placed either in the <code>&lt;head&gt;</code> section or just before the closing <code>&lt;/body&gt;</code> tag.</p>
+        <ul>
+          <li><code>src</code>: The URL of the external JavaScript file.</li>
+          <li><code>async</code>: Allows the script to be executed asynchronously, meaning it doesn't block the page from rendering.</li>
+          <li><code>defer</code>: Ensures the script is executed after the HTML document is fully parsed.</li>
+        </ul>
+      
+        <h3>💡 Why Link and Script Tags Are Important:</h3>
+        <ul>
+          <li><strong>Link Tag</strong>: Allows you to link external CSS files, icons, and fonts, which are essential for styling and enhancing the website’s visual appearance.</li>
+          <li><strong>Script Tag</strong>: Enables the inclusion of JavaScript, adding interactivity and dynamic behavior to your website.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;link rel="stylesheet" href="styles.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;h1&gt;Welcome to the Link and Script Tags Tutorial&lt;/h1&gt;
+          &lt;p&gt;This page demonstrates the use of the &lt;code&gt;&lt;link&gt;&lt;/code&gt; and &lt;code&gt;&lt;script&gt;&lt;/code&gt; tags in HTML.&lt;/p&gt;
+      
+          &lt;script src="script.js" defer&gt;&lt;/script&gt;
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>The <code>&lt;link&gt;</code> tag will link the external CSS file, and the <code>&lt;script&gt;</code> tag will include the external JavaScript file in the page.</p>
+      </section>
+      <section id="html-video-audio-tags">
+        <h2 class="gradient-title">Video and Audio Tags</h2>
+      
+        <p>HTML5 introduced the <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags to allow embedding multimedia content such as videos and audio directly into web pages without requiring third-party plugins like Flash. These tags help in embedding media content and controlling playback.</p>
+      
+        <h3>📝 <code>&lt;video&gt;</code> Tag</h3>
+        <p>The <code>&lt;video&gt;</code> tag is used to embed video content in a webpage. It provides built-in controls for playing, pausing, and adjusting the volume.</p>
+        <ul>
+          <li><code>src</code>: Specifies the path to the video file.</li>
+          <li><code>controls</code>: Adds built-in controls like play, pause, volume, and fullscreen.</li>
+          <li><code>autoplay</code>: Automatically starts playing the video when the page loads.</li>
+          <li><code>loop</code>: Loops the video once it finishes.</li>
+          <li><code>muted</code>: Mutes the video audio by default.</li>
+          <li><code>poster</code>: Specifies an image to show as a placeholder before the video starts.</li>
+        </ul>
+      
+        <h3>📝 <code>&lt;audio&gt;</code> Tag</h3>
+        <p>The <code>&lt;audio&gt;</code> tag is used to embed sound files (like MP3s or OGGs) into a webpage.</p>
+        <ul>
+          <li><code>src</code>: Specifies the path to the audio file.</li>
+          <li><code>controls</code>: Adds audio controls for play, pause, volume, etc.</li>
+          <li><code>autoplay</code>: Automatically plays the audio when the page loads.</li>
+          <li><code>loop</code>: Loops the audio once it finishes.</li>
+          <li><code>muted</code>: Mutes the audio by default.</li>
+        </ul>
+      
+        <h3>💡 Why Video and Audio Tags are Important:</h3>
+        <ul>
+          <li><strong>Easy Integration</strong>: They allow easy integration of media content without relying on external plugins.</li>
+          <li><strong>Widely Supported</strong>: Both tags are widely supported across modern browsers and devices.</li>
+          <li><strong>Control Over Playback</strong>: Both tags provide rich options for controlling media playback, enhancing user experience.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;HTML Video and Audio Tags Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+      
+          &lt;h1&gt;HTML Video Tag Example&lt;/h1&gt;
+          &lt;video src="video.mp4" controls autoplay loop poster="video-poster.jpg"&gt;Your browser does not support the video tag.&lt;/video&gt;
+      
+          &lt;h1&gt;HTML Audio Tag Example&lt;/h1&gt;
+          &lt;audio src="audio.mp3" controls autoplay loop&gt;Your browser does not support the audio element.&lt;/audio&gt;
+      
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>The <code>&lt;video&gt;</code> tag will display a video with controls, and the <code>&lt;audio&gt;</code> tag will play an audio file with its controls.</p>
+      </section>
+      <section id="html-svg">
+        <h2 class="gradient-title">SVG in HTML</h2>
+      
+        <p>SVG (Scalable Vector Graphics) is an XML-based format for vector graphics. It is widely used in web design to create high-quality graphics that are scalable without losing quality. SVG images can be embedded directly into HTML, styled with CSS, and manipulated with JavaScript, making them a powerful tool for creating interactive graphics.</p>
+      
+        <h3>📝 What is SVG?</h3>
+        <p>SVG allows you to define graphics using XML syntax. Unlike raster graphics (such as JPEG or PNG), which are made up of pixels, SVG graphics are vector-based, meaning they are composed of shapes defined by mathematical expressions. This allows SVG images to be infinitely scalable without losing resolution.</p>
+      
+        <h3>📝 Benefits of Using SVG:</h3>
+        <ul>
+          <li><strong>Scalability:</strong> SVG images maintain their quality at any size or resolution.</li>
+          <li><strong>Interactivity:</strong> SVG can be animated and manipulated via JavaScript and CSS.</li>
+          <li><strong>Searchable and Accessible:</strong> Text within SVG files is searchable and can be read by screen readers, making it more accessible.</li>
+          <li><strong>Lightweight:</strong> SVG files tend to be smaller in size compared to other image formats like PNG or JPEG.</li>
+        </ul>
+      
+        <h3>📝 Embedding SVG in HTML</h3>
+        <p>You can embed SVG directly into your HTML in several ways:</p>
+        <ul>
+          <li>Using the <code>&lt;svg&gt;</code> element within HTML.</li>
+          <li>Using an <code>&lt;img&gt;</code> tag to reference an external SVG file.</li>
+          <li>Using the <code>&lt;object&gt;</code>, <code>&lt;embed&gt;</code>, or <code>&lt;iframe&gt;</code> tags.</li>
+        </ul>
+      
+        <h3>🧠 Real-life Example:</h3>
+        <ul>
+          <li>Logos and icons are often created using SVG to ensure they remain crisp and clear across devices of different resolutions.</li>
+          <li>Interactive charts, maps, and graphs can be created with SVG and styled with CSS.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;SVG in HTML Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+      
+          &lt;h1&gt;SVG Logo&lt;/h1&gt;
+      
+          &lt;!-- Embedding SVG directly in HTML --&gt;
+          &lt;svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"&gt;
+            &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+          &lt;/svg&gt;
+      
+          &lt;!-- Using SVG as an Image --&gt;
+          &lt;img src="logo.svg" alt="SVG Logo" /&gt;
+      
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>The first example will show a yellow circle with a green border, and the second example will display an external SVG image (logo.svg) if provided.</p>
+      </section>
+      <section id="html-iframes">
+        <h2 class="gradient-title">iFrames in HTML</h2>
+      
+        <p>An iFrame (Inline Frame) is an HTML element that allows you to embed another HTML document within the current document. Essentially, it creates a "window" to display external content such as another webpage, video, map, or even an entire website, directly inside your webpage.</p>
+      
+        <h3>📝 What is an iFrame?</h3>
+        <p>An iFrame is used to display content from another source within a specific section of your webpage. You can think of it as a frame inside a frame, allowing you to embed media, websites, or other resources while maintaining your website’s structure.</p>
+      
+        <h3>📝 Common Attributes of the <code>&lt;iframe&gt;</code> Tag:</h3>
+        <ul>
+          <li><code>src</code>: Specifies the URL of the page to display within the iframe.</li>
+          <li><code>width</code>: Defines the width of the iframe.</li>
+          <li><code>height</code>: Defines the height of the iframe.</li>
+          <li><code>frameborder</code>: Specifies whether the iframe should have a border (1 for visible, 0 for none).</li>
+          <li><code>allowfullscreen</code>: Allows the iframe content to be displayed in fullscreen mode.</li>
+          <li><code>loading</code>: Specifies when to load the iframe (e.g., "lazy" for lazy loading).</li>
+          <li><code>name</code>: Specifies a name for the iframe, useful for targeting links within the iframe.</li>
+        </ul>
+      
+        <h3>🧠 Real-life Example:</h3>
+        <ul>
+          <li>Embedding a YouTube video using an iFrame.</li>
+          <li>Displaying Google Maps within a webpage.</li>
+          <li>Embedding external content like a contact form or social media feed inside a page.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          &lt;title&gt;iFrame Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+      
+          &lt;h1&gt;Embedded YouTube Video&lt;/h1&gt;
+          &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  title="YouTube video player" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+      
+          &lt;h1&gt;Embedded Google Map&lt;/h1&gt;
+          &lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..." 
+                  width="600" height="450" style="border:0;" allowfullscreen loading="lazy"&gt;&lt;/iframe&gt;
+      
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>The first iframe will show a YouTube video player, and the second will embed a Google Map into the page.</p>
+      </section>
+      <section id="html-code-tags">
+        <h2 class="gradient-title">HTML Code Tags</h2>
+      
+        <p>In HTML, when you want to display code snippets or technical content on a webpage, you use special tags designed for this purpose. These tags preserve formatting, spacing, and make the content look like actual code. They’re essential for documentation, tutorials, blogs, and developer tools.</p>
+      
+        <h3>📝 Important Code-Related Tags in HTML</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;code&gt;</td>
+              <td>Displays inline code.</td>
+            </tr>
+            <tr>
+              <td>&lt;pre&gt;</td>
+              <td>Preserves both whitespace and line breaks — ideal for block code.</td>
+            </tr>
+            <tr>
+              <td>&lt;kbd&gt;</td>
+              <td>Represents user keyboard input.</td>
+            </tr>
+            <tr>
+              <td>&lt;samp&gt;</td>
+              <td>Represents output from a computer program.</td>
+            </tr>
+            <tr>
+              <td>&lt;var&gt;</td>
+              <td>Represents variables in programming or mathematical expressions.</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>🧠 Real-life Usage Examples:</h3>
+        <ul>
+          <li>Tutorials: Displaying HTML, CSS, JavaScript snippets.</li>
+          <li>Blogs: Showing command line input/output.</li>
+          <li>Docs: Displaying sample variable usage or output.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;p&gt;To create a paragraph in HTML, use the &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;
+      function greet(name) {
+        return "Hello, " + name + "!";
+      }
+      &lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; to save your file.&lt;/p&gt;
+      
+      &lt;p&gt;Output: &lt;samp&gt;Login successful&lt;/samp&gt;&lt;/p&gt;
+      
+      &lt;p&gt;Use the variable &lt;var&gt;x&lt;/var&gt; to store the result.&lt;/p&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <ul>
+          <li>Displays an inline code snippet for the paragraph tag.</li>
+          <li>Shows a formatted block of JavaScript using <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code>.</li>
+          <li>Highlights keyboard input like <kbd>Ctrl</kbd> + <kbd>S</kbd>.</li>
+          <li>Outputs a system message using <samp>Login successful</samp>.</li>
+          <li>Displays a variable name using <var>x</var>.</li>
+        </ul>
+      </section>
+      <section id="html-semantic-tags">
+        <h2 class="gradient-title">HTML Semantic Tags</h2>
+      
+        <p>Semantic tags in HTML clearly describe the meaning or role of the content inside them. Unlike non-semantic tags like &lt;div&gt; or &lt;span&gt;, semantic tags provide meaning both to the browser and the developer.</p>
+      
+        <p>They help structure your webpage better, improve accessibility, and enhance SEO by letting search engines understand the page layout more accurately.</p>
+      
+        <h3>📝 What Are Semantic Tags?</h3>
+        <p>Semantic tags tell the browser <strong>what</strong> the content is — not just <strong>how</strong> it should look. These tags organize content in a meaningful way, making the structure more readable and understandable.</p>
+      
+        <h3>📋 Common Semantic Tags in HTML</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;header&gt;</td>
+              <td>Defines the header section (intro, nav links, etc.)</td>
+            </tr>
+            <tr>
+              <td>&lt;nav&gt;</td>
+              <td>Contains site navigation links</td>
+            </tr>
+            <tr>
+              <td>&lt;main&gt;</td>
+              <td>Specifies the main content of the page</td>
+            </tr>
+            <tr>
+              <td>&lt;section&gt;</td>
+              <td>Defines a section of content with a related theme</td>
+            </tr>
+            <tr>
+              <td>&lt;article&gt;</td>
+              <td>Contains self-contained, reusable content like a blog post</td>
+            </tr>
+            <tr>
+              <td>&lt;aside&gt;</td>
+              <td>Represents side content like ads, tips, or sidebars</td>
+            </tr>
+            <tr>
+              <td>&lt;footer&gt;</td>
+              <td>Represents the footer of the page or section</td>
+            </tr>
+            <tr>
+              <td>&lt;figure&gt;</td>
+              <td>Wraps media elements like images with a caption</td>
+            </tr>
+            <tr>
+              <td>&lt;figcaption&gt;</td>
+              <td>Provides a caption for a &lt;figure&gt; element</td>
+            </tr>
+            <tr>
+              <td>&lt;mark&gt;</td>
+              <td>Highlights text</td>
+            </tr>
+            <tr>
+              <td>&lt;time&gt;</td>
+              <td>Represents a specific time or date</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>🧠 Real-life Use Cases</h3>
+        <ul>
+          <li>Blog websites use <code>&lt;article&gt;</code> for individual posts and <code>&lt;aside&gt;</code> for side widgets.</li>
+          <li>News sites structure their content with <code>&lt;section&gt;</code> and <code>&lt;header&gt;</code>.</li>
+          <li>Landing pages often wrap main content inside <code>&lt;main&gt;</code> and use <code>&lt;footer&gt;</code> for contact info or links.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;Semantic Tags Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+      
+          &lt;header&gt;
+            &lt;h1&gt;Welcome to My Blog&lt;/h1&gt;
+            &lt;nav&gt;
+              &lt;a href="#"&gt;Home&lt;/a&gt; |
+              &lt;a href="#"&gt;Articles&lt;/a&gt; |
+              &lt;a href="#"&gt;Contact&lt;/a&gt;
+            &lt;/nav&gt;
+          &lt;/header&gt;
+      
+          &lt;main&gt;
+            &lt;article&gt;
+              &lt;h2&gt;Using Semantic Tags&lt;/h2&gt;
+              &lt;p&gt;Semantic tags help give structure and meaning to HTML.&lt;/p&gt;
+            &lt;/article&gt;
+      
+            &lt;aside&gt;
+              &lt;h3&gt;Quick Tip&lt;/h3&gt;
+              &lt;p&gt;Use &lt;mark&gt;highlight&lt;/mark&gt; to emphasize text.&lt;/p&gt;
+            &lt;/aside&gt;
+          &lt;/main&gt;
+      
+          &lt;footer&gt;
+            &lt;p&gt;&amp;copy; 2025 MyBlog. All rights reserved.&lt;/p&gt;
+          &lt;/footer&gt;
+      
+        &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>A basic blog layout with semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+      </section>
+      <section id="html-canvas">
+        <h2 class="gradient-title">HTML &lt;canvas&gt; Element</h2>
+      
+        <p>The <code>&lt;canvas&gt;</code> tag in HTML is used to draw graphics on a web page using JavaScript. It provides a space where you can draw shapes, lines, text, images, animations, and more.</p>
+      
+        <p>However, the <code>&lt;canvas&gt;</code> element by itself is just a blank area — all the drawing must be done with JavaScript.</p>
+      
+        <h3>💡 Why Use &lt;canvas&gt;?</h3>
+        <ul>
+          <li>To create <strong>interactive graphics</strong> (e.g., games, data visualizations)</li>
+          <li>To draw <strong>custom charts</strong>, animations, and UI components</li>
+          <li>Useful for <strong>real-time rendering</strong> and pixel-level control</li>
+        </ul>
+      
+        <h3>📋 Key Canvas Methods (Using JavaScript)</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>getContext("2d")</code></td>
+              <td>Gets the 2D drawing context</td>
+            </tr>
+            <tr>
+              <td><code>fillRect(x, y, w, h)</code></td>
+              <td>Draws a filled rectangle</td>
+            </tr>
+            <tr>
+              <td><code>strokeRect(x, y, w, h)</code></td>
+              <td>Draws a rectangle border</td>
+            </tr>
+            <tr>
+              <td><code>clearRect(x, y, w, h)</code></td>
+              <td>Clears the specified rectangle area</td>
+            </tr>
+            <tr>
+              <td><code>beginPath() / closePath()</code></td>
+              <td>Starts/ends a path for lines or shapes</td>
+            </tr>
+            <tr>
+              <td><code>moveTo(x, y) / lineTo(x, y)</code></td>
+              <td>Draws lines from point to point</td>
+            </tr>
+            <tr>
+              <td><code>arc(x, y, radius, ...)</code></td>
+              <td>Draws circles or arcs</td>
+            </tr>
+            <tr>
+              <td><code>fillText(text, x, y)</code></td>
+              <td>Writes filled text</td>
+            </tr>
+            <tr>
+              <td><code>drawImage()</code></td>
+              <td>Draws images onto the canvas</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>💻 Basic Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;Canvas Example&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+      
+        &lt;canvas id="myCanvas" width="300" height="200" style="border:1px solid #000;"&gt;
+          Your browser does not support the canvas element.
+        &lt;/canvas&gt;
+      
+        &lt;script&gt;
+          const canvas = document.getElementById("myCanvas");
+          const ctx = canvas.getContext("2d");
+      
+          // Draw a filled rectangle
+          ctx.fillStyle = "lightblue";
+          ctx.fillRect(20, 20, 100, 50);
+      
+          // Draw a border rectangle
+          ctx.strokeStyle = "blue";
+          ctx.strokeRect(140, 20, 100, 50);
+      
+          // Draw a circle
+          ctx.beginPath();
+          ctx.arc(90, 120, 40, 0, 2 * Math.PI);
+          ctx.fillStyle = "orange";
+          ctx.fill();
+          ctx.stroke();
+        &lt;/script&gt;
+      
+      &lt;/body&gt;
+      &lt;/html&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>A canvas showing a light blue rectangle, a bordered rectangle, and an orange circle drawn using JavaScript.</p>
+      </section>
+      <section id="html-global-attributes">
+        <h2 class="gradient-title">HTML Global Attributes</h2>
+      
+        <p><strong>Global attributes</strong> are special HTML attributes that can be used on <em>any HTML element</em>, regardless of the tag. These attributes help enhance functionality, styling, accessibility, and interactivity across your webpage.</p>
+      
+        <h3>💡 Why Use Global Attributes?</h3>
+        <ul>
+          <li>Apply <strong>universal behavior</strong> to elements</li>
+          <li>Improve <strong>accessibility</strong> and usability</li>
+          <li>Target elements easily with <code>id</code>, <code>class</code>, or <code>data-*</code> in CSS/JS</li>
+          <li>Enable <strong>editable content</strong>, tooltips, and keyboard navigation</li>
+        </ul>
+      
+        <h3>📋 Common Global Attributes</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>id</code></td>
+              <td>Unique identifier for an element</td>
+            </tr>
+            <tr>
+              <td><code>class</code></td>
+              <td>Assigns one or more class names for styling or JavaScript access</td>
+            </tr>
+            <tr>
+              <td><code>style</code></td>
+              <td>Adds inline CSS styling</td>
+            </tr>
+            <tr>
+              <td><code>title</code></td>
+              <td>Displays tooltip text on hover</td>
+            </tr>
+            <tr>
+              <td><code>hidden</code></td>
+              <td>Hides the element from view</td>
+            </tr>
+            <tr>
+              <td><code>tabindex</code></td>
+              <td>Controls the tab order of an element</td>
+            </tr>
+            <tr>
+              <td><code>lang</code></td>
+              <td>Specifies the language of the element's content</td>
+            </tr>
+            <tr>
+              <td><code>dir</code></td>
+              <td>Sets text direction (e.g., ltr, rtl)</td>
+            </tr>
+            <tr>
+              <td><code>contenteditable</code></td>
+              <td>Makes the content editable by the user</td>
+            </tr>
+            <tr>
+              <td><code>draggable</code></td>
+              <td>Specifies whether the element is draggable</td>
+            </tr>
+            <tr>
+              <td><code>spellcheck</code></td>
+              <td>Enables or disables spell checking</td>
+            </tr>
+            <tr>
+              <td><code>data-*</code></td>
+              <td>Custom data attributes used in JavaScript</td>
+            </tr>
+            <tr>
+              <td><code>accesskey</code></td>
+              <td>Defines a keyboard shortcut for focusing/activating an element</td>
+            </tr>
+            <tr>
+              <td><code>aria-*</code></td>
+              <td>Improves accessibility for assistive technologies</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>💻 Basic Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;div id="info" class="highlight" style="color: green;" title="This is a tooltip"&gt;
+        Hover over me to see a tooltip.
+      &lt;/div&gt;
+      
+      &lt;div contenteditable="true" spellcheck="true"&gt;
+        You can edit this text directly!
+      &lt;/div&gt;
+      
+      &lt;input type="text" lang="en" dir="ltr" accesskey="n" /&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>
+          - First div shows a green text with a tooltip on hover. <br>
+          - Second div is editable. <br>
+          - Input field has language and direction settings with an access key.
+        </p>
+      </section>
+      <section id="html-entities">
+        <h2 class="gradient-title">HTML Entities</h2>
+      
+        <p>HTML Entities are special codes used to display reserved characters or symbols that would otherwise have a specific meaning in HTML. For example, the less-than sign (`<`) is used to define HTML tags, so we use `&lt;` to display it as text on the page.</p>
+      
+        <h3>💡 Why HTML Entities Are Important</h3>
+        <ul>
+          <li>Prevent confusion between HTML code and text content</li>
+          <li>Enable the display of special symbols like currency signs, mathematical operators, and more</li>
+          <li>Ensure proper rendering of symbols across all browsers and platforms</li>
+        </ul>
+      
+        <h3>📋 Common HTML Entities</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Entity Code</th>
+              <th>Symbol</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&amp;lt;</code></td>
+              <td>&lt;</td>
+              <td>Less-than sign</td>
+            </tr>
+            <tr>
+              <td><code>&amp;gt;</code></td>
+              <td>&gt;</td>
+              <td>Greater-than sign</td>
+            </tr>
+            <tr>
+              <td><code>&amp;amp;</code></td>
+              <td>&amp;</td>
+              <td>Ampersand</td>
+            </tr>
+            <tr>
+              <td><code>&amp;quot;</code></td>
+              <td>&quot;</td>
+              <td>Double quote</td>
+            </tr>
+            <tr>
+              <td><code>&amp;apos;</code></td>
+              <td>&apos;</td>
+              <td>Single quote</td>
+            </tr>
+            <tr>
+              <td><code>&amp;copy;</code></td>
+              <td>&copy;</td>
+              <td>Copyright symbol</td>
+            </tr>
+            <tr>
+              <td><code>&amp;reg;</code></td>
+              <td>&reg;</td>
+              <td>Registered trademark</td>
+            </tr>
+            <tr>
+              <td><code>&amp;euro;</code></td>
+              <td>&euro;</td>
+              <td>Euro currency sign</td>
+            </tr>
+            <tr>
+              <td><code>&amp;yen;</code></td>
+              <td>&yen;</td>
+              <td>Yen currency sign</td>
+            </tr>
+            <tr>
+              <td><code>&amp;nbsp;</code></td>
+              <td>&nbsp;</td>
+              <td>Non-breaking space</td>
+            </tr>
+            <tr>
+              <td><code>&amp;hearts;</code></td>
+              <td>&hearts;</td>
+              <td>Heart symbol</td>
+            </tr>
+            <tr>
+              <td><code>&amp;trade;</code></td>
+              <td>&trade;</td>
+              <td>Trademark symbol</td>
+            </tr>
+            <tr>
+              <td><code>&#169;</code></td>
+              <td>©</td>
+              <td>Copyright (decimal code)</td>
+            </tr>
+            <tr>
+              <td><code>&#x1F600;</code></td>
+              <td>😀</td>
+              <td>Emoji (hexadecimal code)</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>💻 Basic Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;p&gt;This is an example of using &amp;lt; and &amp;gt; in HTML.&lt;/p&gt;
+      
+      &lt;p&gt;The Euro sign: &amp;euro;&lt;/p&gt;
+      
+      &lt;p&gt;I &amp;hearts; HTML Entities!&lt;/p&gt;
+      
+      &lt;p&gt;Non-breaking space: &amp;nbsp; - between words&lt;/p&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>
+          - The first line displays `<` and `>` using their respective entity codes. <br>
+          - The second line shows the Euro symbol (€). <br>
+          - The third line displays the heart symbol (♥). <br>
+          - The last line demonstrates a non-breaking space between words.
+        </p>
+      </section>
+      <section id="html-quotation-tag">
+        <h2 class="gradient-title">HTML Quotation Tag</h2>
+      
+        <p>HTML provides special tags for marking up quotations. The <code>&lt;blockquote&gt;</code> tag is used for long quotes that are typically displayed with indentation, while the <code>&lt;q&gt;</code> tag is used for shorter inline quotes.</p>
+      
+        <h3>💡 Why Use Quotation Tags?</h3>
+        <ul>
+          <li>Improves the semantics of your content, indicating when something is quoted.</li>
+          <li>Enhances accessibility by making quotes more recognizable to screen readers.</li>
+          <li>Improves readability and presentation with browser styling for block-level quotes.</li>
+        </ul>
+      
+        <h3>📋 Common Quotation Tags</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;blockquote&gt;</code></td>
+              <td>Represents a block-level quotation, typically indented for emphasis.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;q&gt;</code></td>
+              <td>Represents an inline quotation within a paragraph or sentence.</td>
+            </tr>
+            <tr>
+              <td><code>cite</code> (attribute)</td>
+              <td>Specifies the source of the quotation. Can be used with both <code>&lt;blockquote&gt;</code> and <code>&lt;q&gt;</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>💻 Basic Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;blockquote cite="https://www.example.com"&gt;
+        This is a blockquote example. The content is usually a longer quote, often indented.
+      &lt;/blockquote&gt;
+      
+      &lt;p&gt;According to the <q cite="https://www.example.com">example source</q>, this is an inline quote used within a sentence.&lt;/p&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>
+          - The <code>&lt;blockquote&gt;</code> tag displays a long quotation, usually indented. <br>
+          - The <code>&lt;q&gt;</code> tag displays an inline quote within the sentence, and the citation source is also included.
+        </p>
+      </section>
+      <section id="html-obsolete-tags">
+        <h2 class="gradient-title">Obsolete HTML Tags</h2>
+      
+        <p>Over time, HTML has evolved, and some tags that were once used are now considered obsolete or deprecated. These tags have been replaced by newer, more effective alternatives that offer better browser compatibility, accessibility, and SEO advantages.</p>
+      
+        <h3>💡 Why Obsolete HTML Tags Matter</h3>
+        <ul>
+          <li>Older tags may not be supported in modern browsers.</li>
+          <li>Newer tags provide better structure and semantics for search engines and assistive technologies.</li>
+          <li>Using up-to-date HTML ensures future-proofing and ensures compatibility with newer web standards.</li>
+        </ul>
+      
+        <h3>📋 Common Obsolete HTML Tags</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Replacement/Alternative</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;font&gt;</code></td>
+              <td>CSS for styling text</td>
+              <td>Defines text font, size, and color.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;center&gt;</code></td>
+              <td>CSS <code>text-align: center</code></td>
+              <td>Centers content on the page.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;b&gt;</code></td>
+              <td>CSS <code>font-weight: bold</code></td>
+              <td>Used for bold text. Semantic <code>&lt;strong&gt;</code> is preferred.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;i&gt;</code></td>
+              <td>CSS <code>font-style: italic</code></td>
+              <td>Used for italic text. Semantic <code>&lt;em&gt;</code> is preferred.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;u&gt;</code></td>
+              <td>CSS <code>text-decoration: underline</code></td>
+              <td>Underlines text.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;big&gt;</code></td>
+              <td>CSS <code>font-size</code></td>
+              <td>Increases text size.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;strike&gt;</code></td>
+              <td>CSS <code>text-decoration: line-through</code></td>
+              <td>Strikes through text.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;tt&gt;</code></td>
+              <td>CSS <code>font-family: monospace</code></td>
+              <td>Represents monospaced text.</td>
+            </tr>
+            <tr>
+              <td><code>&lt;applet&gt;</code></td>
+              <td><code>&lt;object&gt;</code> or <code>&lt;embed&gt;</code></td>
+              <td>Embeds applets into web pages.</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>💻 Basic Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;p style="font-family: Arial, sans-serif;"&gt;This is an example of using inline CSS for text styling.&lt;/p&gt;
+      
+      &lt;p style="text-align: center;"&gt;This content is centered using CSS instead of the obsolete &lt;center&gt; tag.&lt;/p&gt;
+      
+      &lt;p style="font-weight: bold;"&gt;This text is bold using CSS instead of the &lt;b&gt; tag.&lt;/p&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>
+          - The first example uses inline CSS to style the text. <br>
+          - The second example centers the content using CSS instead of the &lt;center&gt; tag. <br>
+          - The third example makes the text bold using CSS instead of the &lt;b&gt; tag.
+        </p>
+      </section>
+      <section id="html-character-sets">
+        <h2 class="gradient-title">Character Sets in HTML</h2>
+      
+        <p>Character sets define the encoding system used to represent characters on a webpage. Using the correct character set is essential for displaying text, symbols, and characters accurately, especially for languages and special symbols.</p>
+      
+        <h3>💡 Why Character Sets Matter?</h3>
+        <ul>
+          <li>Ensures that characters from different languages and special symbols display correctly.</li>
+          <li>Prevents issues like question marks or incorrect symbols from appearing in place of intended characters.</li>
+          <li>Enables the use of special characters like ©, ñ, €, etc., on the page.</li>
+        </ul>
+      
+        <h3>📋 Common Character Sets</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Character Set</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UTF-8</td>
+              <td>A universal character encoding that can represent every character in every language.</td>
+              <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+            </tr>
+            <tr>
+              <td>ISO-8859-1</td>
+              <td>A character set for Western European languages.</td>
+              <td><code>&lt;meta charset="ISO-8859-1"&gt;</code></td>
+            </tr>
+            <tr>
+              <td>UTF-16</td>
+              <td>A character set that can represent characters in almost all languages, but uses more space than UTF-8.</td>
+              <td><code>&lt;meta charset="UTF-16"&gt;</code></td>
+            </tr>
+            <tr>
+              <td>ASCII</td>
+              <td>A character set that represents English characters only.</td>
+              <td><code>&lt;meta charset="ASCII"&gt;</code></td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>💻 Basic Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;meta charset="UTF-8"&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <p>The <code>&lt;meta charset="UTF-8"&gt;</code> tag ensures that all characters on the page are displayed correctly, supporting a wide variety of characters from different languages and symbols.</p>
       </section>
       
           
