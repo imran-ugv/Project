@@ -58,7 +58,7 @@
         <li><a href="#html-tables">HTML Tables</a></li>
         <li><a href="#more-on-tables">More on Tables</a></li>
         <li><a href="#introduction-to-html-forms">Introduction to HTML Forms</a></li>
-        <li>HTML Input Types</li>
+        <li><a href="#html-input-types">HTML Input Types</a></li>
         <li>Textarea and Select</li>
         <li>More on Forms</li>
         <li>HTML Meta Tags</li>
@@ -2474,7 +2474,91 @@
           </tbody>
         </table>
       </section>      
+      <section id="html-input-types">
+        <h2>✅ HTML Input Types</h2>
+        <p>HTML provides various types of input fields that help users enter data in different formats. These are defined using the <code>&lt;input&gt;</code> tag and the <code>type</code> attribute.</p>
       
+        <p>Each type of input tells the browser how to handle the user input — whether it’s text, number, date, file upload, checkbox, etc.</p>
+      
+        <h3>💡 Why It’s Important:</h3>
+        <ul>
+          <li>User experience (UX)</li>
+          <li>Data validation</li>
+          <li>Mobile keyboard optimization</li>
+          <li>Accessibility</li>
+        </ul>
+      
+        <h3>📋 Common HTML Input Types:</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Input Type</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>text</td><td>Single-line text input</td></tr>
+            <tr><td>password</td><td>Hides the characters as you type</td></tr>
+            <tr><td>email</td><td>Validates email format</td></tr>
+            <tr><td>number</td><td>Accepts numeric input</td></tr>
+            <tr><td>tel</td><td>Telephone number input</td></tr>
+            <tr><td>url</td><td>URL input</td></tr>
+            <tr><td>date</td><td>Date picker</td></tr>
+            <tr><td>time</td><td>Time input</td></tr>
+            <tr><td>checkbox</td><td>True/false toggle</td></tr>
+            <tr><td>radio</td><td>Select one option from a group</td></tr>
+            <tr><td>file</td><td>Upload files</td></tr>
+            <tr><td>submit</td><td>Submits the form</td></tr>
+            <tr><td>reset</td><td>Resets all form inputs</td></tr>
+          </tbody>
+        </table>
+      
+        <h3>🧠 Real-life Example:</h3>
+        <ul>
+          <li><strong>Login form</strong> uses <code>text</code> and <code>password</code></li>
+          <li><strong>Signup form</strong> uses <code>email</code>, <code>tel</code>, <code>date</code>, <code>checkbox</code>, etc.</li>
+          <li><strong>Upload form</strong> uses <code>file</code> input</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;form&gt;
+        &lt;label&gt;Text: &lt;input type="text"&gt;&lt;/label&gt;
+        &lt;label&gt;Password: &lt;input type="password"&gt;&lt;/label&gt;
+        &lt;label&gt;Email: &lt;input type="email"&gt;&lt;/label&gt;
+        &lt;label&gt;Number: &lt;input type="number"&gt;&lt;/label&gt;
+        &lt;label&gt;Telephone: &lt;input type="tel"&gt;&lt;/label&gt;
+        &lt;label&gt;URL: &lt;input type="url"&gt;&lt;/label&gt;
+        &lt;label&gt;Date: &lt;input type="date"&gt;&lt;/label&gt;
+        &lt;label&gt;Time: &lt;input type="time"&gt;&lt;/label&gt;
+        &lt;label&gt;File: &lt;input type="file"&gt;&lt;/label&gt;
+        &lt;label&gt;Checkbox: &lt;input type="checkbox"&gt;&lt;/label&gt;
+        &lt;label&gt;Radio: &lt;input type="radio" name="group"&gt;&lt;/label&gt;
+        &lt;input type="submit" value="Submit"&gt;
+        &lt;input type="reset" value="Reset"&gt;
+      &lt;/form&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <form>
+          <label>Text: <input type="text"></label>
+          <label>Password: <input type="password"></label>
+          <label>Email: <input type="email"></label>
+          <label>Number: <input type="number"></label>
+          <label>Telephone: <input type="tel"></label>
+          <label>URL: <input type="url"></label>
+          <label>Date: <input type="date"></label>
+          <label>Time: <input type="time"></label>
+          <label>File: <input type="file"></label>
+          <label>Checkbox: <input type="checkbox"></label>
+          <label>Radio: <input type="radio" name="group"></label>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+      </section>      
     </main>
   </div>
 
