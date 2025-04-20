@@ -47,11 +47,11 @@
         <li><a href="#horizontal-line">Horizontal Line Tag</a></li>
         <li><a href="#line-break">Line Break Tag</a></li>
         <li><a href="#anchor-tag">Anchor Tag</a></li>
-        <li>Image Tag</li>
-        <li>Pre Tag</li>
-        <li>HTML Inline Elements</li>
-        <li>HTML Block Elements</li>
-        <li>HTML Lists</li>
+        <li><a href="#image-tag">Image Tag</a></li>
+        <li><a href="#pre-tag">Pre Tag</a></li>
+        <li><a href="#inline-elements">HTML Inline Elements</a></li>
+        <li><a href="#block-elements">HTML Block Elements</a></li>
+        <li><a href="#html-lists">HTML Lists</a></li>
         <li>HTML Unordered List</li>
         <li>HTML Ordered List</li>
         <li>HTML Definition Lists</li>
@@ -1197,6 +1197,513 @@
           <li>You can style the link using CSS to remove underline, change color, etc.</li>
         </ul>
       </section>
+      <section id="image-tag">
+        <h2 class="gradient-title">HTML Image Tag</h2>
+      
+        <p>The <code>&lt;img&gt;</code> tag is used to embed images in a webpage. It is a self-closing tag, meaning it doesn't require a closing tag. Images are essential for adding visual interest to websites and can provide context or help convey information effectively.</p>
+      
+        <h3>✅ Basic Syntax</h3>
+        <pre><code>&lt;img src="image-source.jpg" alt="description" width="500" height="300"&gt;</code></pre>
+      
+        <h3>📋 Key Features of <code>&lt;img&gt;</code> Tag</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tag</td>
+              <td>&lt;img&gt;</td>
+            </tr>
+            <tr>
+              <td>Attributes</td>
+              <td>src, alt, width, height, title</td>
+            </tr>
+            <tr>
+              <td>Self-closing</td>
+              <td>Yes, no closing tag is needed</td>
+            </tr>
+            <tr>
+              <td>Default Style</td>
+              <td>No default styling (inline element)</td>
+            </tr>
+            <tr>
+              <td>Use Cases</td>
+              <td>Displaying images, icons, logos, etc.</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>🔍 Real-Life Examples</h3>
+      
+        <h4>✅ Basic Image:</h4>
+        <div class="code-box">
+          <code>
+      &lt;img src="logo.png" alt="Website Logo"&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Image with Width and Height:</h4>
+        <div class="code-box">
+          <code>
+      &lt;img src="flower.jpg" alt="Flower" width="400" height="300"&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Image with Link (Clickable Image):</h4>
+        <div class="code-box">
+          <code>
+      &lt;a href="https://www.example.com"&gt;
+        &lt;img src="product.jpg" alt="Product Image" width="300" height="200"&gt;
+      &lt;/a&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Image with Title (Appears on Hover):</h4>
+        <div class="code-box">
+          <code>
+      &lt;img src="cat.jpg" alt="Cute Cat" title="Click for more info" width="300"&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Using Image as Background (with CSS):</h4>
+        <div class="code-box">
+          <code>
+      &lt;div class="image-container"&gt;
+        &lt;img src="background.jpg" alt="Background Image"&gt;
+      &lt;/div&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🎯 Tips</h3>
+        <ul>
+          <li><strong>Alt Text:</strong> Always use descriptive alt text for better accessibility and SEO.</li>
+          <li><strong>Image Optimization:</strong> Use appropriately sized images to optimize page loading time.</li>
+          <li><strong>Responsive Images:</strong> Consider using the <code>srcset</code> attribute for responsive images based on the viewport.</li>
+        </ul>
+      </section>
+      <section id="pre-tag">
+        <h2 class="gradient-title">HTML <code>&lt;pre&gt;</code> Tag</h2>
+      
+        <p>The <code>&lt;pre&gt;</code> tag in HTML is used to display preformatted text. It preserves both spaces and line breaks, making it ideal for displaying code snippets, poetry, or any content where the spacing and formatting are important.</p>
+      
+        <h3>✅ Basic Syntax</h3>
+        <pre><code>&lt;pre&gt;
+        This is preformatted text.
+        All spaces and line breaks are preserved.
+      &lt;/pre&gt;</code></pre>
+      
+        <h3>📋 Key Features of <code>&lt;pre&gt;</code> Tag</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tag</td>
+              <td>&lt;pre&gt;</td>
+            </tr>
+            <tr>
+              <td>Formatting</td>
+              <td>Maintains white spaces and line breaks</td>
+            </tr>
+            <tr>
+              <td>Display</td>
+              <td>Displays text in a fixed-width font</td>
+            </tr>
+            <tr>
+              <td>Use Cases</td>
+              <td>Showing code, poetry, ASCII art, etc.</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>🔍 Real-Life Examples</h3>
+      
+        <h4>✅ Basic Example:</h4>
+        <div class="code-box">
+          <code>
+      &lt;pre&gt;
+        This is some preformatted text.
+        It preserves spaces and line breaks.
+      &lt;/pre&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Displaying Code Snippets:</h4>
+        <div class="code-box">
+          <code>
+      &lt;pre&gt;
+        &lt;code&gt;
+          function greet() {
+            console.log("Hello, world!");
+          }
+        &lt;/code&gt;
+      &lt;/pre&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Preformatted Text with Spaces:</h4>
+        <div class="code-box">
+          <code>
+      &lt;pre&gt;
+        Name:   John
+        Age:    25
+        Country: USA
+      &lt;/pre&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🎯 Tips</h3>
+        <ul>
+          <li><strong>Preserving Formatting:</strong> Use the <code>&lt;pre&gt;</code> tag whenever you need to display content with exact formatting, such as code.</li>
+          <li><strong>Combining with <code>&lt;code&gt;</code>:</strong> The <code>&lt;pre&gt;</code> tag is often used with the <code>&lt;code&gt;</code> tag for displaying code blocks with correct indentation.</li>
+        </ul>
+      </section>
+      <section id="inline-elements">
+        <h2 class="gradient-title">HTML Inline Elements</h2>
+      
+        <p>Inline elements in HTML are those elements that do not start on a new line. They only take up as much width as necessary and allow other inline elements or content to sit next to them. These elements are typically used to format small portions of content within a block-level element (like a paragraph).</p>
+      
+        <h3>✅ Common Inline Elements:</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;a&gt;</td>
+              <td>Defines a hyperlink</td>
+            </tr>
+            <tr>
+              <td>&lt;span&gt;</td>
+              <td>Defines a section in a document for styling</td>
+            </tr>
+            <tr>
+              <td>&lt;strong&gt;</td>
+              <td>Defines important text (usually bold)</td>
+            </tr>
+            <tr>
+              <td>&lt;em&gt;</td>
+              <td>Defines emphasized text (usually italic)</td>
+            </tr>
+            <tr>
+              <td>&lt;img&gt;</td>
+              <td>Embeds an image</td>
+            </tr>
+            <tr>
+              <td>&lt;b&gt;</td>
+              <td>Defines bold text</td>
+            </tr>
+            <tr>
+              <td>&lt;i&gt;</td>
+              <td>Defines italic text</td>
+            </tr>
+            <tr>
+              <td>&lt;abbr&gt;</td>
+              <td>Defines an abbreviation or acronym</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>📋 Real-Life Examples</h3>
+      
+        <h4>✅ Hyperlink:</h4>
+        <div class="code-box">
+          <code>
+      &lt;a href="https://www.example.com"&gt;Click here to visit Example&lt;/a&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Span:</h4>
+        <div class="code-box">
+          <code>
+      &lt;p&gt;This is &lt;span style="color: red;"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Strong (Bold Text):</h4>
+        <div class="code-box">
+          <code>
+      &lt;p&gt;&lt;strong&gt;This is bold text for emphasis.&lt;/strong&gt;&lt;/p&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ Em (Italic Text):</h4>
+        <div class="code-box">
+          <code>
+      &lt;p&gt;This is &lt;em&gt;italic&lt;/em&gt; text.&lt;/p&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🎯 Tips</h3>
+        <ul>
+          <li><strong>No Line Breaks:</strong> Inline elements do not cause a line break, so they flow within the content. They are useful for styling parts of content without disrupting the overall layout.</li>
+          <li><strong>Use for Styling:</strong> Inline elements are great for styling or adding links, without affecting the document's structure.</li>
+        </ul>
+      </section>
+      <section id="block-elements">
+        <h2 class="gradient-title">HTML Block Elements</h2>
+      
+        <p>Block elements are those elements that take up the full width of their container, meaning they always start on a new line and stack vertically. They are typically used to structure the main sections of a web page, such as headers, paragraphs, and divs.</p>
+      
+        <h3>✅ Common Block Elements:</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;div&gt;</td>
+              <td>Defines a division or section of a document</td>
+            </tr>
+            <tr>
+              <td>&lt;header&gt;</td>
+              <td>Represents a container for introductory content or navigational links</td>
+            </tr>
+            <tr>
+              <td>&lt;footer&gt;</td>
+              <td>Defines the footer for a page or section</td>
+            </tr>
+            <tr>
+              <td>&lt;main&gt;</td>
+              <td>Represents the dominant content of the &lt;body&gt; of the document</td>
+            </tr>
+            <tr>
+              <td>&lt;section&gt;</td>
+              <td>Defines a section in a document, such as a chapter or part of an article</td>
+            </tr>
+            <tr>
+              <td>&lt;article&gt;</td>
+              <td>Defines an independent, self-contained piece of content</td>
+            </tr>
+            <tr>
+              <td>&lt;nav&gt;</td>
+              <td>Defines navigation links</td>
+            </tr>
+            <tr>
+              <td>&lt;h1&gt; - &lt;h6&gt;</td>
+              <td>Defines HTML headings, with &lt;h1&gt; being the highest rank and &lt;h6&gt; being the lowest</td>
+            </tr>
+            <tr>
+              <td>&lt;p&gt;</td>
+              <td>Represents a paragraph of text</td>
+            </tr>
+            <tr>
+              <td>&lt;ul&gt;</td>
+              <td>Defines an unordered list</td>
+            </tr>
+            <tr>
+              <td>&lt;ol&gt;</td>
+              <td>Defines an ordered list</td>
+            </tr>
+            <tr>
+              <td>&lt;li&gt;</td>
+              <td>Defines a list item</td>
+            </tr>
+            <tr>
+              <td>&lt;table&gt;</td>
+              <td>Defines a table</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>📋 Real-Life Examples</h3>
+      
+        <h4>✅ `<div>` (Division):</h4>
+        <div class="code-box">
+          <code>
+      &lt;div class="container"&gt;
+        &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+      &lt;/div&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ `<header>` (Header Section):</h4>
+        <div class="code-box">
+          <code>
+      &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ `<footer>` (Footer Section):</h4>
+        <div class="code-box">
+          <code>
+      &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Your Company. All rights reserved.&lt;/p&gt;
+      &lt;/footer&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>✅ `<section>` (Section of Content):</h4>
+        <div class="code-box">
+          <code>
+      &lt;section&gt;
+        &lt;h2&gt;About Us&lt;/h2&gt;
+        &lt;p&gt;This is the section about our company.&lt;/p&gt;
+      &lt;/section&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>🎯 Tips</h3>
+        <ul>
+          <li><strong>Block-level Layouts:</strong> Block elements help structure a page into distinct sections. They are essential for creating layouts in a web page.</li>
+          <li><strong>Full Width:</strong> Block elements take up the full width available, so they can be used to create areas like headers, footers, and content sections.</li>
+          <li><strong>Nested Structure:</strong> Block elements can be nested inside each other to create complex structures.</li>
+        </ul>
+      </section>
+      <section id="html-lists">
+        <h2 class="gradient-title">HTML Lists</h2>
+      
+        <p>HTML lists are used to group a set of related items in a specific order or as a simple collection. There are three main types of lists in HTML:</p>
+        <ul>
+          <li><strong>Unordered Lists</strong> (<code>&lt;ul&gt;</code>) - Items in these lists have no specific order, and typically, they are shown with bullet points.</li>
+          <li><strong>Ordered Lists</strong> (<code>&lt;ol&gt;</code>) - Items in these lists are ordered and shown with numbers or letters.</li>
+          <li><strong>Definition Lists</strong> (<code>&lt;dl&gt;</code>) - Used to define terms and their descriptions, often for glossaries or dictionaries.</li>
+        </ul>
+      
+        <h3>✅ Common List Types:</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&lt;ul&gt;</td>
+              <td>Defines an unordered list (bulleted list)</td>
+            </tr>
+            <tr>
+              <td>&lt;ol&gt;</td>
+              <td>Defines an ordered list (numbered list)</td>
+            </tr>
+            <tr>
+              <td>&lt;li&gt;</td>
+              <td>Defines a list item</td>
+            </tr>
+            <tr>
+              <td>&lt;dl&gt;</td>
+              <td>Defines a definition list</td>
+            </tr>
+            <tr>
+              <td>&lt;dt&gt;</td>
+              <td>Defines a term in a definition list</td>
+            </tr>
+            <tr>
+              <td>&lt;dd&gt;</td>
+              <td>Defines a description of a term in a definition list</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>📋 Real-Life Examples</h3>
+      
+        <h4>✅ Unordered List (&lt;ul&gt;):</h4>
+        <div class="code-box">
+          <code>
+      &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+      &lt;/ul&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      
+        <h4>✅ Ordered List (&lt;ol&gt;):</h4>
+        <div class="code-box">
+          <code>
+      &lt;ol&gt;
+        &lt;li&gt;First step&lt;/li&gt;
+        &lt;li&gt;Second step&lt;/li&gt;
+        &lt;li&gt;Third step&lt;/li&gt;
+      &lt;/ol&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ol>
+          <li>First step</li>
+          <li>Second step</li>
+          <li>Third step</li>
+        </ol>
+      
+        <h4>✅ Definition List (&lt;dl&gt;):</h4>
+        <div class="code-box">
+          <code>
+      &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Hypertext Markup Language, the standard language for creating web pages.&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Cascading Style Sheets, used for describing the presentation of a document written in HTML.&lt;/dd&gt;
+      &lt;/dl&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Hypertext Markup Language, the standard language for creating web pages.</dd>
+          <dt>CSS</dt>
+          <dd>Cascading Style Sheets, used for describing the presentation of a document written in HTML.</dd>
+        </dl>
+      
+        <h3>🎯 Tips</h3>
+        <ul>
+          <li><strong>List Styles:</strong> You can customize the appearance of lists using CSS to change the bullet type in unordered lists, or use numbers and letters in ordered lists.</li>
+          <li><strong>Nesting Lists:</strong> Lists can be nested within other lists, enabling multi-level lists.</li>
+          <li><strong>Accessibility:</strong> Always ensure that lists have semantic meaning in your content, which helps with accessibility and SEO.</li>
+        </ul>
+      </section>
+      
       
 
     </main>
