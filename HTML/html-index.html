@@ -52,10 +52,10 @@
         <li><a href="#inline-elements">HTML Inline Elements</a></li>
         <li><a href="#block-elements">HTML Block Elements</a></li>
         <li><a href="#html-lists">HTML Lists</a></li>
-        <li>HTML Unordered List</li>
-        <li>HTML Ordered List</li>
-        <li>HTML Definition Lists</li>
-        <li>HTML Tables</li>
+        <li><a href="#html-unordered-list">HTML Unordered List</a></li>
+        <li><a href="#html-ordered-list">HTML Ordered List</a></li>
+        <li><a href="#html-definition-list">HTML Definition Lists</a></li>
+        <li><a href="#html-tables">HTML Tables</a></li>
         <li>More on Tables</li>
         <li>Introduction to HTML Forms</li>
         <li>HTML Input Types</li>
@@ -1703,9 +1703,645 @@
           <li><strong>Accessibility:</strong> Always ensure that lists have semantic meaning in your content, which helps with accessibility and SEO.</li>
         </ul>
       </section>
+      <section id="html-unordered-list">
+        <h2 class="gradient-title">HTML Unordered List</h2>
       
+        <p>An <strong>unordered list</strong> in HTML is used to display a list of items where the order doesn't matter. Typically, unordered lists are displayed with bullet points, but you can customize them with CSS for a different appearance.</p>
       
-
+        <h3>✅ Structure of an Unordered List:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ul&gt;
+        &lt;li&gt;List item 1&lt;/li&gt;
+        &lt;li&gt;List item 2&lt;/li&gt;
+        &lt;li&gt;List item 3&lt;/li&gt;
+      &lt;/ul&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 Real-Life Example:</h3>
+        <h4>Grocery List</h4>
+        <div class="code-box">
+          <code>
+      &lt;ul&gt;
+        &lt;li&gt;Milk&lt;/li&gt;
+        &lt;li&gt;Eggs&lt;/li&gt;
+        &lt;li&gt;Bread&lt;/li&gt;
+        &lt;li&gt;Fruits&lt;/li&gt;
+      &lt;/ul&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ul>
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+          <li>Fruits</li>
+        </ul>
+      
+        <h3>✅ Example with Custom Bullet Points:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ul class="custom-bullets"&gt;
+        &lt;li&gt;Milk&lt;/li&gt;
+        &lt;li&gt;Eggs&lt;/li&gt;
+        &lt;li&gt;Bread&lt;/li&gt;
+        &lt;li&gt;Fruits&lt;/li&gt;
+      &lt;/ul&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>CSS to customize bullets:</h4>
+        <div class="code-box">
+          <code>
+      .custom-bullets {
+        list-style-type: square;
+      }
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ul class="custom-bullets">
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+          <li>Fruits</li>
+        </ul>
+      
+        <h3>✅ Nested Unordered List:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ul&gt;
+        &lt;li&gt;Fruits
+          &lt;ul&gt;
+            &lt;li&gt;Apple&lt;/li&gt;
+            &lt;li&gt;Banana&lt;/li&gt;
+            &lt;li&gt;Orange&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Vegetables
+          &lt;ul&gt;
+            &lt;li&gt;Carrot&lt;/li&gt;
+            &lt;li&gt;Broccoli&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ul>
+          <li>Fruits
+            <ul>
+              <li>Apple</li>
+              <li>Banana</li>
+              <li>Orange</li>
+            </ul>
+          </li>
+          <li>Vegetables
+            <ul>
+              <li>Carrot</li>
+              <li>Broccoli</li>
+            </ul>
+          </li>
+        </ul>
+      
+        <h3>🎯 Tips:</h3>
+        <ul>
+          <li><strong>List Styles:</strong> You can customize the appearance of lists using CSS to change the bullet type in unordered lists, or use numbers and letters in ordered lists.</li>
+          <li><strong>Nesting Lists:</strong> Lists can be nested within other lists, enabling multi-level lists.</li>
+          <li><strong>Accessibility:</strong> Always ensure that lists have semantic meaning in your content, which helps with accessibility and SEO.</li>
+        </ul>
+      </section>
+      <section id="html-ordered-list">
+        <h2 class="gradient-title">HTML Ordered List</h2>
+      
+        <p>An <strong>ordered list</strong> in HTML is used to display a list of items where the order <strong>matters</strong>. Typically, ordered lists are displayed with numbers or letters, and it is used when you want to show the sequence or rank of the items.</p>
+      
+        <h3>✅ Structure of an Ordered List:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ol&gt;
+        &lt;li&gt;First item&lt;/li&gt;
+        &lt;li&gt;Second item&lt;/li&gt;
+        &lt;li&gt;Third item&lt;/li&gt;
+      &lt;/ol&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 Real-Life Example:</h3>
+        <h4>Steps to Bake a Cake</h4>
+        <div class="code-box">
+          <code>
+      &lt;ol&gt;
+        &lt;li&gt;Preheat the oven&lt;/li&gt;
+        &lt;li&gt;Prepare the batter&lt;/li&gt;
+        &lt;li&gt;Pour the batter into the pan&lt;/li&gt;
+        &lt;li&gt;Bake for 30 minutes&lt;/li&gt;
+        &lt;li&gt;Let the cake cool&lt;/li&gt;
+      &lt;/ol&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ol>
+          <li>Preheat the oven</li>
+          <li>Prepare the batter</li>
+          <li>Pour the batter into the pan</li>
+          <li>Bake for 30 minutes</li>
+          <li>Let the cake cool</li>
+        </ol>
+      
+        <h3>✅ Example with Custom Numbering Style:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ol class="custom-numbering"&gt;
+        &lt;li&gt;Preheat the oven&lt;/li&gt;
+        &lt;li&gt;Prepare the batter&lt;/li&gt;
+        &lt;li&gt;Pour the batter into the pan&lt;/li&gt;
+        &lt;li&gt;Bake for 30 minutes&lt;/li&gt;
+        &lt;li&gt;Let the cake cool&lt;/li&gt;
+      &lt;/ol&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>CSS to customize numbering:</h4>
+        <div class="code-box">
+          <code>
+      .custom-numbering {
+        list-style-type: upper-alpha;
+      }
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output (with Alphabetical Numbering):</h4>
+        <ol class="custom-numbering">
+          <li>Preheat the oven</li>
+          <li>Prepare the batter</li>
+          <li>Pour the batter into the pan</li>
+          <li>Bake for 30 minutes</li>
+          <li>Let the cake cool</li>
+        </ol>
+      
+        <h3>✅ Nested Ordered List:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ol&gt;
+        &lt;li&gt;Preparation
+          &lt;ol&gt;
+            &lt;li&gt;Gather the ingredients&lt;/li&gt;
+            &lt;li&gt;Preheat the oven&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Baking
+          &lt;ol&gt;
+            &lt;li&gt;Mix the ingredients&lt;/li&gt;
+            &lt;li&gt;Bake for 30 minutes&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Finishing
+          &lt;ol&gt;
+            &lt;li&gt;Let the cake cool&lt;/li&gt;
+            &lt;li&gt;Frost the cake&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+      &lt;/ol&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ol>
+          <li>Preparation
+            <ol>
+              <li>Gather the ingredients</li>
+              <li>Preheat the oven</li>
+            </ol>
+          </li>
+          <li>Baking
+            <ol>
+              <li>Mix the ingredients</li>
+              <li>Bake for 30 minutes</li>
+            </ol>
+          </li>
+          <li>Finishing
+            <ol>
+              <li>Let the cake cool</li>
+              <li>Frost the cake</li>
+            </ol>
+          </li>
+        </ol>
+      
+        <h3>🎯 Customizing the Start Number:</h3>
+        <div class="code-box">
+          <code>
+      &lt;ol start="5"&gt;
+        &lt;li&gt;Step 5: Preheat the oven&lt;/li&gt;
+        &lt;li&gt;Step 6: Prepare the batter&lt;/li&gt;
+        &lt;li&gt;Step 7: Bake for 30 minutes&lt;/li&gt;
+      &lt;/ol&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <ol start="5">
+          <li>Step 5: Preheat the oven</li>
+          <li>Step 6: Prepare the batter</li>
+          <li>Step 7: Bake for 30 minutes</li>
+        </ol>
+      
+        <h3>🎯 Tips:</h3>
+        <ul>
+          <li><strong>Customization:</strong> You can customize the numbering style using the `list-style-type` property in CSS to display numbers, letters, Roman numerals, and more.</li>
+          <li><strong>Accessibility:</strong> Always ensure your ordered list has proper semantic meaning for accessibility.</li>
+          <li><strong>Nested Lists:</strong> Ordered lists can also be nested to create sub-lists within a main list.</li>
+        </ul>
+      </section>
+      <section id="html-definition-list">
+        <h2 class="gradient-title">HTML Definition Lists</h2>
+      
+        <p>A <strong>definition list</strong> in HTML is used to display a list of terms and their corresponding definitions. It's ideal for glossaries, dictionary-style lists, or any list where you need to present a term and its explanation.</p>
+      
+        <h3>✅ Structure of a Definition List:</h3>
+        <div class="code-box">
+          <code>
+      &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;HyperText Markup Language is the standard language for creating web pages.&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Cascading Style Sheets is used for styling the appearance of web pages.&lt;/dd&gt;
+      &lt;/dl&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 Real-Life Example:</h3>
+        <h4>Glossary of Web Development Terms</h4>
+        <div class="code-box">
+          <code>
+      &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;HTML stands for HyperText Markup Language, the standard language for creating web pages.&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;CSS stands for Cascading Style Sheets, used for styling and formatting the layout of web pages.&lt;/dd&gt;
+        &lt;dt&gt;JavaScript&lt;/dt&gt;
+        &lt;dd&gt;JavaScript is a programming language used to create interactive effects within web browsers.&lt;/dd&gt;
+      &lt;/dl&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output:</h4>
+        <dl>
+          <dt>HTML</dt>
+          <dd>HTML stands for HyperText Markup Language, the standard language for creating web pages.</dd>
+          <dt>CSS</dt>
+          <dd>CSS stands for Cascading Style Sheets, used for styling and formatting the layout of web pages.</dd>
+          <dt>JavaScript</dt>
+          <dd>JavaScript is a programming language used to create interactive effects within web browsers.</dd>
+        </dl>
+      
+        <h3>✅ Styling a Definition List:</h3>
+        <div class="code-box">
+          <code>
+      &lt;dl class="styled-list"&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;HTML stands for HyperText Markup Language, used to structure the content of a webpage.&lt;/dd&gt;
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;CSS stands for Cascading Style Sheets, used for designing and laying out web pages.&lt;/dd&gt;
+        &lt;dt&gt;JavaScript&lt;/dt&gt;
+        &lt;dd&gt;JavaScript is a programming language used to create interactive effects on a webpage.&lt;/dd&gt;
+      &lt;/dl&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>CSS to Style Definition List:</h4>
+        <div class="code-box">
+          <code>
+      .styled-list {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      
+      .styled-list dt {
+        font-weight: bold;
+        color: #4CAF50;
+      }
+      
+      .styled-list dd {
+        margin: 10px 0 15px 20px;
+        color: #555;
+      }
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h4>Output (Styled Definition List):</h4>
+        <dl class="styled-list">
+          <dt>HTML</dt>
+          <dd>HTML stands for HyperText Markup Language, used to structure the content of a webpage.</dd>
+          <dt>CSS</dt>
+          <dd>CSS stands for Cascading Style Sheets, used for designing and laying out web pages.</dd>
+          <dt>JavaScript</dt>
+          <dd>JavaScript is a programming language used to create interactive effects on a webpage.</dd>
+        </dl>
+      
+        <h3>🎯 Customizing the Definition List Layout:</h3>
+        <div class="code-box">
+          <code>
+      .styled-list dt {
+        display: inline-block;
+        width: 150px;
+        font-weight: bold;
+      }
+      
+      .styled-list dd {
+        margin-left: 160px;
+      }
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      </section>
+      <section id="html-tables">
+        <h2 class="gradient-title">HTML Tables</h2>
+      
+        <p>An <strong>HTML table</strong> is used to represent tabular data in rows and columns. It helps display structured data like a spreadsheet. Tables are often used for representing data in a grid format, such as contact information, product catalogs, and financial reports.</p>
+      
+        <h3>✅ Basic Structure of an HTML Table:</h3>
+        <div class="code-box">
+          <code>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Header 1&lt;/th&gt;
+          &lt;th&gt;Header 2&lt;/th&gt;
+          &lt;th&gt;Header 3&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+          &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+          &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+          &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+          &lt;td&gt;Row 2, Cell 3&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 Output:</h3>
+        <table>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+          </tr>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+          </tr>
+        </table>
+      
+        <h3>✅ Adding a Table Caption:</h3>
+        <div class="code-box">
+          <code>
+      &lt;table&gt;
+        &lt;caption&gt;Monthly Sales Report&lt;/caption&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Product&lt;/th&gt;
+          &lt;th&gt;Sales&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Product A&lt;/td&gt;
+          &lt;td&gt;$5000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Product B&lt;/td&gt;
+          &lt;td&gt;$7000&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 Output:</h3>
+        <table>
+          <caption>Monthly Sales Report</caption>
+          <tr>
+            <th>Product</th>
+            <th>Sales</th>
+          </tr>
+          <tr>
+            <td>Product A</td>
+            <td>$5000</td>
+          </tr>
+          <tr>
+            <td>Product B</td>
+            <td>$7000</td>
+          </tr>
+        </table>
+      
+        <h3>✅ Styling a Table:</h3>
+        <div class="code-box">
+          <code>
+      &lt;table class="styled-table"&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Product&lt;/th&gt;
+          &lt;th&gt;Price&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Product A&lt;/td&gt;
+          &lt;td&gt;$50&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Product B&lt;/td&gt;
+          &lt;td&gt;$70&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 CSS to Style the Table:</h3>
+        <div class="code-box">
+          <code>
+      .styled-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      .styled-table th, .styled-table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      
+      .styled-table th {
+        background-color: #f2f2f2;
+      }
+      
+      .styled-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      
+      .styled-table tr:hover {
+        background-color: #ddd;
+      }
+          </code>
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+        </div>
+      
+        <h3>📋 Output (Styled Table):</h3>
+        <table class="styled-table">
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Product A</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>Product B</td>
+            <td>$70</td>
+          </tr>
+        </table>
+      </section>
+      <section class="content-section" id="more-on-tables">
+        <h2>HTML More on Tables</h2>
+      
+        <p>While the <strong>basic table structure</strong> helps organize content in rows and columns, HTML provides additional features to create more advanced and flexible tables.</p>
+      
+        <ul>
+          <li>Merging cells (<code>colspan</code> and <code>rowspan</code>)</li>
+          <li>Adding table borders and spacing</li>
+          <li>Nesting tables (tables inside tables)</li>
+        </ul>
+      
+        <h3>1. Merging Cells with <code>colspan</code> and <code>rowspan</code></h3>
+      
+        <h4><code>colspan</code>: Merge columns</h4>
+        <div class="code-container">
+          <button class="copy-btn">Copy</button>
+          <pre><code>&lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;th colspan="2"&gt;Full Name&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;First Name&lt;/td&gt;
+          &lt;td&gt;Last Name&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;</code></pre>
+        </div>
+      
+        <h4><code>rowspan</code>: Merge rows</h4>
+        <div class="code-container">
+          <button class="copy-btn">Copy</button>
+          <pre><code>&lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;th rowspan="2"&gt;Subject&lt;/th&gt;
+          &lt;td&gt;Math&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Science&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;</code></pre>
+        </div>
+      
+        <h3>2. Add Border Spacing and Padding</h3>
+        <div class="code-container">
+          <button class="copy-btn">Copy</button>
+          <pre><code>&lt;table class="spacing-table"&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Alice&lt;/td&gt;
+          &lt;td&gt;24&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Bob&lt;/td&gt;
+          &lt;td&gt;29&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;</code></pre>
+        </div>
+      
+        <h3>3. Nested Tables</h3>
+        <div class="code-container">
+          <button class="copy-btn">Copy</button>
+          <pre><code>&lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Department&lt;/th&gt;
+          &lt;th&gt;Employees&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;HR&lt;/td&gt;
+          &lt;td&gt;
+            &lt;table border="1"&gt;
+              &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;Bob&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;</code></pre>
+        </div>
+      
+        <h3>Summary Table</h3>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Tag/Attribute</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Merge columns</td>
+              <td><code>colspan</code></td>
+              <td>Combines multiple columns into one</td>
+            </tr>
+            <tr>
+              <td>Merge rows</td>
+              <td><code>rowspan</code></td>
+              <td>Combines multiple rows into one</td>
+            </tr>
+            <tr>
+              <td>Table spacing</td>
+              <td><code>border-spacing</code></td>
+              <td>Adds space between table cells</td>
+            </tr>
+            <tr>
+              <td>Nested table</td>
+              <td><code>&lt;table&gt; inside &lt;td&gt;</code></td>
+              <td>Allows complex table structures</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>    
+      
     </main>
   </div>
 
