@@ -60,7 +60,7 @@
         <li><a href="#introduction-to-html-forms">Introduction to HTML Forms</a></li>
         <li><a href="#html-input-types">HTML Input Types</a></li>
         <li><a href="#html-textarea-select">Textarea and Select</a></li>
-        <li>More on Forms</li>
+        <li><a href="#html-more-on-forms">More on Forms</a></li>
         <li>HTML Meta Tags</li>
         <li>Link and Script Tags</li>
         <li>Video and Audio tags</li>
@@ -2475,7 +2475,7 @@
         </table>
       </section>      
       <section id="html-input-types">
-        <h2 class="gradient-title">✅ HTML Input Types</h2>
+        <h2 class="gradient-title">HTML Input Types</h2>
         <p>HTML provides various types of input fields that help users enter data in different formats. These are defined using the <code>&lt;input&gt;</code> tag and the <code>type</code> attribute.</p>
       
         <p>Each type of input tells the browser how to handle the user input — whether it’s text, number, date, file upload, checkbox, etc.</p>
@@ -2560,7 +2560,7 @@
         </form>
       </section>  
       <section id="html-textarea-select">
-        <h2 class="gradient-title">✅ HTML &lt;textarea&gt; and &lt;select&gt; Elements</h2>
+        <h2 class="gradient-title">HTML &lt;textarea&gt; and &lt;select&gt; Elements</h2>
       
         <p>In HTML, besides using regular input fields like <code>&lt;input type="text"&gt;</code>, you often need fields that handle either <strong>long text</strong> or <strong>dropdown selections</strong>. That’s where the <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements come in.</p>
       
@@ -2636,6 +2636,70 @@
           </label>
         </form>
       </section>
+      <section id="html-more-on-forms">
+        <h2 class="gradient-title">More on Forms</h2>
+      
+        <p>Forms are an essential part of web development, allowing users to send data to the server. HTML forms provide various elements that can be used to gather data from users in a structured way. Beyond basic form elements, there are additional features to enhance the form's usability, validation, and design.</p>
+      
+        <h3>📝 Common Form Elements:</h3>
+        <ul>
+          <li><code>&lt;input&gt;</code> – Used for various types of user input, such as text, password, email, etc.</li>
+          <li><code>&lt;textarea&gt;</code> – A multi-line text input for longer text entries.</li>
+          <li><code>&lt;select&gt;</code> – A dropdown list for selecting from predefined options.</li>
+          <li><code>&lt;button&gt;</code> – A clickable button that can be used to submit the form or trigger an action.</li>
+        </ul>
+      
+        <h3>🔧 Form Attributes:</h3>
+        <ul>
+          <li><code>action</code>: Specifies the URL to which the form data will be sent upon submission.</li>
+          <li><code>method</code>: Defines the HTTP method (GET or POST) used to send the form data.</li>
+          <li><code>enctype</code>: Specifies how the form data should be encoded when submitted (important for file uploads).</li>
+        </ul>
+      
+        <h3>📦 Example Use Cases:</h3>
+        <ul>
+          <li>A contact form on a website that allows users to send messages.</li>
+          <li>A login form for users to authenticate themselves.</li>
+          <li>A registration form for users to sign up for an account.</li>
+        </ul>
+      
+        <h3>💻 Code Example:</h3>
+        <div class="code-box">
+          <button class="copy-btn" onclick="copyCode(this)">📋</button>
+          <code>
+      &lt;form action="submit_form.php" method="POST"&gt;
+        &lt;label&gt;Name:&lt;br&gt;
+          &lt;input type="text" name="name"&gt;
+        &lt;/label&gt;
+      
+        &lt;label&gt;Email:&lt;br&gt;
+          &lt;input type="email" name="email"&gt;
+        &lt;/label&gt;
+      
+        &lt;label&gt;Message:&lt;br&gt;
+          &lt;textarea name="message"&gt;&lt;/textarea&gt;
+        &lt;/label&gt;
+      
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
+          </code>
+        </div>
+      
+        <h4>🔎 Output:</h4>
+        <form action="submit_form.php" method="POST">
+          <label>Name:<br>
+            <input type="text" name="name">
+          </label><br><br>
+          <label>Email:<br>
+            <input type="email" name="email">
+          </label><br><br>
+          <label>Message:<br>
+            <textarea name="message"></textarea>
+          </label><br><br>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      
           
     </main>
   </div>

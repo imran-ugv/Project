@@ -141,6 +141,7 @@ html, body {
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .content h3 {
