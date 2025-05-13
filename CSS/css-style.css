@@ -12,14 +12,12 @@ body {
   min-height: 100vh;
 }
 
-/* FLEX CONTAINER FOR PAGE */
 .page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* NAVBAR remains same */
 header {
   position: sticky;
   top: 0;
@@ -64,7 +62,6 @@ header {
   color: #d4a5ff;
 }
 
-/* MAIN CONTENT */
 .main-content {
   flex: 1;
   display: flex;
@@ -98,7 +95,6 @@ header {
   animation: fadeInUp 2s ease-in;
 }
 
-/* FOOTER */
 .footer-section {
   background-color: #0f0f0f;
   padding: 1.2rem 0;
@@ -107,7 +103,6 @@ header {
   font-size: 0.9rem;
 }
 
-/* Animations */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }

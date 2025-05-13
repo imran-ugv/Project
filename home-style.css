@@ -9,7 +9,6 @@
     background-color: #f4f4f4;
   }
   
-  /* NAVBAR STYLE */
   header {
     position: sticky;
     top: 0;
@@ -47,7 +46,6 @@
     cursor: pointer;
   }  
   
-  /* NAV LINKS */
   .nav-links {
     display: flex;
     gap: 30px;
@@ -134,13 +132,11 @@
       border-right: none;
     }
   }
-  
-  /* Hero Button Container */
+
   .hero-buttons {
     margin-top: 2rem;
   }
   
-  /* Add glow animation keyframes */
   @keyframes glowPulse {
     0% {
       box-shadow: 0 0 10px #9b5de5;
@@ -153,7 +149,6 @@
     }
   }
   
-  /* Button styling */
   .start-btn {
     display: inline-block;
     padding: 0.8rem 2rem;
@@ -168,14 +163,11 @@
     animation: glowPulse 2s infinite;
   }
   
-  /* Hover effect */
   .start-btn:hover {
     transform: scale(1.07);
     cursor: pointer;
   }  
 
-  
-  /* Main Content Section */
 .headline {
     width: 100%;
     text-align: center;
@@ -203,7 +195,6 @@
     }
   }
   
-  /* New flex container for the columns only */
   .content-wrapper {
     display: flex;
     justify-content: center;
@@ -217,7 +208,6 @@
     padding: 4rem 2rem;
   }
   
-  /* Headline stays on top */
   .headline {
     text-align: center;
     margin-bottom: 3rem;
@@ -228,7 +218,6 @@
     color: #f15bb5;
   }
   
-  /* Columns container with flex layout */
   .columns {
     display: flex;
     justify-content: center;
@@ -237,7 +226,6 @@
     flex-wrap: wrap;
   }
   
-  /* Individual column box */
   .column {
     background-color: #0f0f0f29;
     color: white;
@@ -249,7 +237,6 @@
     min-height: 350px;
   }
   
-  /* Headings */
   .column h2 {
     margin-top: 0;
     margin-bottom: 1.5rem;
@@ -257,7 +244,6 @@
     color: #d4a5ff;;
   }
   
-  /* List text */
   .column ul, .column p {
     font-size: 1.1rem;
     line-height: 1.8;
@@ -265,7 +251,6 @@
     padding-left: 0;
   }
   
-  /* Emoji bullets: Green, single icon */
   .column ul li {
     list-style: none;
     position: relative;
@@ -281,7 +266,6 @@
     top: 0;
   }
   
-  /* Paragraph checkmark styling */
   .column p {
     position: relative;
     padding-left: 2rem;
@@ -296,14 +280,12 @@
     top: 0;
   }
 
-  /* Main CTA container (centered below columns) */
 .main-cta {
   width: 100%;
   margin-top: 5rem;
   text-align: center;
 }
 
-/* Button styling */
 .start-btn2 {
   display: inline-block;
   padding: 1.0rem 6.5rem;
@@ -318,13 +300,11 @@
   transition: transform 0.3s ease;
 }
 
-/* Hover effect */
 .start-btn2:hover {
   transform: scale(1.08);
   cursor: pointer;
 }
 
-/* Glow animation */
 @keyframes glowPulse {
   0% {
     box-shadow: 0 0 10px #9b5de5;
@@ -337,7 +317,6 @@
   }
 }
 
-  /* Footer section */
 .footer-section {
     background-color: #0f0f0f;
     padding: 1.2rem 0;
